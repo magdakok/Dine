@@ -7,15 +7,21 @@ body {
 
 .h1 {
     font-size: 32px;
+    font-weight: 300;
     line-height: 40px;
 }
 
 .h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
 
 }
 
 .h3 {
-
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
 }
 
 .paragraph {
@@ -28,4 +34,12 @@ body {
 
 .-black {
     color: $color-gray;
+}
+
+*:link,
+*:visited,
+*:hover,
+*:active {
+    text-decoration: none;
+    color: inherit;
 }
