@@ -14,7 +14,7 @@
       <h1 class="heading -h1 -white">Exquisite dining since 1989</h1>
       <p class="paragraph -white">Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from 
         the comfort of our farmhouse.</p>
-        <a href="#" class="btnCta -black">Book a table</a>
+        <a href="#" class="a-btnCta -black">Book a table</a>
     </div>
   </header>
   <section class="o-features">
@@ -80,14 +80,17 @@
 
   <section class="o-events">
     <div class="m-events__imgBox"> 
-      <img src="./images/homepage/family-gathering-mobile.jpg" alt="Family members grabbing food from the table">
+      <img src="./images/homepage/family-gathering-mobile.jpg" id="eventImg" alt="Family members grabbing food from the table">
     </div>
     <div class="m-events__box">
       <div class="m-events__textBox">
+
+        <!-- This data is to be kept in JS file -->
         <div class="m-events__event">
-          <h2 class="heading -h2 -black">Family Gathering</h2>
-          <p class="paragraph -black">We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We’ll provide a memorable experience for all.</p>
+          <h2 class="heading -h2 -black" id="eventHeading">Family Gathering</h2>
+          <p class="paragraph -black" id="eventText">We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We’ll provide a memorable experience for all.</p>
         </div>
+        <!-- Just one event div -->
 
         <div class="m-events__event">
           <h2 class="heading -h2 -black">Special Events</h2>
@@ -100,17 +103,25 @@
         </div>
         
       </div>
-      <a href="#" class="btnCta -black">Book a table</a>
+
+      <a href="#" class="a-btnCta -black">Book a table</a>
+
       <ul class="m-events__nav">
         <li class="m-events__item">Family Gathering</li>
         <li class="m-events__item">Special Events</li>
         <li class="m-events__item">Social Events</li>
       </ul>
+
     </div>
   </section>
 
+  <section class="o-reservation">
+    <h2 class="heading -h2 -white">Ready to make a reservation?</h2>
+    <a href="#" class="a-btnCta -transparent">Book a table</a>
+  </section>
 
-  Ready to make a reservation?
+
+  
 
   Book a table
 
