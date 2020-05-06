@@ -20,9 +20,26 @@ body {
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 1.7;
+  color: #242b37;
+}
+
+.h1 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.paragraph {
+  line-height: 25px;
+}
+
+.-white {
+  color: #FFFFFF;
+}
+
+.-black {
+  color: #242b37;
 }
 /*# sourceMappingURL=main.css.map */

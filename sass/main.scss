@@ -7,12 +7,13 @@
 @import "base/typography";
 @import "base/utilities";
  
-// @import "components/";
-// @import "components/";
-// @import "components/";
-// @import "components/";
+@import "components/btn";
 
-@import "layout/header";
+@import "layout/events";
+@import "layout/features";
 @import "layout/footer";
+@import "layout/header";
+@import "layout/highlights";
+@import "layout/reservation";
 
 @import "pages/home";
