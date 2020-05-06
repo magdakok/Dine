@@ -74,6 +74,13 @@ body {
 
 .o-header {
   background-color: #111111;
+  background-image: url(../../images/homepage/hero-bg-mobile.jpg);
+  padding-top: 232px;
+  text-align: center;
+}
+
+.o-header__logo {
+  width: 22%;
 }
 
 .o-highlights {
