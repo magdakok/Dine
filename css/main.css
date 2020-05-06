@@ -68,6 +68,18 @@ body {
   color: inherit;
 }
 
+.o-footer {
+  background-color: #111111;
+}
+
+.o-header {
+  background-color: #111111;
+}
+
+.o-highlights {
+  background-color: #111111;
+}
+
 body > * {
   padding-left: 6.4%;
   padding-right: 6.4%;
