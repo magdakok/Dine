@@ -19,6 +19,10 @@ body {
           box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   font-family: 'Spartan', sans-serif;
   font-size: 15px;
@@ -28,7 +32,20 @@ body {
 
 .h1 {
   font-size: 32px;
+  font-weight: 300;
   line-height: 40px;
+}
+
+.h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
 }
 
 .paragraph {
@@ -41,5 +58,18 @@ body {
 
 .-black {
   color: #242b37;
+}
+
+*:link,
+*:visited,
+*:hover,
+*:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+body > * {
+  padding-left: 6.4%;
+  padding-right: 6.4%;
 }
 /*# sourceMappingURL=main.css.map */
