@@ -1,3 +1,10 @@
 .o-header {
     background-color: $color-gray-dark;
+    background-image: url(../../images/homepage/hero-bg-mobile.jpg);
+    padding-top: 232px;
+    text-align: center;
+
+    &__logo {
+        width: 22%;
+    }
 }
