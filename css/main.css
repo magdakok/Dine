@@ -198,6 +198,17 @@ body {
 
 .o-footer {
   background-color: #111111;
+  padding-top: 80px;
+  padding-bottom: 81px;
+  font-size: 14px;
+  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.o-footer .m-footer__address {
+  margin-top: 31px;
+  margin-bottom: 35px;
 }
 
 .o-header {
