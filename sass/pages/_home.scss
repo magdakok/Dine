@@ -4,3 +4,7 @@ body > * {
     padding-right: $padding-mobile;
     text-align: center;
 }
+
+img {
+    max-width: $img-width-mobile;
+}

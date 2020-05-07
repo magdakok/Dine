@@ -189,4 +189,8 @@ body > * {
   padding-right: 6.4%;
   text-align: center;
 }
+
+img {
+  max-width: 87.2vw;
+}
 /*# sourceMappingURL=main.css.map */
