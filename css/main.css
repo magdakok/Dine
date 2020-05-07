@@ -142,6 +142,36 @@ body {
 
 .o-highlights {
   background-color: #111111;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.o-highlights .-h2 {
+  margin-top: 22px;
+  margin-bottom: 14px;
+}
+
+.o-highlights .-h2::before {
+  content: url(../../images/patterns/pattern-divide.svg);
+  display: block;
+  width: 100%;
+  height: 65px;
+}
+
+.o-highlights .-h3 {
+  margin-top: 29px;
+  margin-bottom: 4px;
+}
+
+.o-highlights .paragraph {
+  margin-bottom: 65px;
+}
+
+.o-highlights .-small {
+  font-size: 15px;
+  line-height: 28px;
+  width: 90%;
+  margin: 0 auto 24px auto;
 }
 
 body > * {

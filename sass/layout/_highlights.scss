@@ -1,3 +1,45 @@
 .o-highlights {
     background-color: $color-gray-dark;
+    padding-top: 28px;
+    padding-bottom: 28px;
+
+    .-h2 {
+        margin-top: 22px;
+        margin-bottom: 14px;
+
+        &::before {
+            content: url(../../images/patterns/pattern-divide.svg);
+            display: block;
+            width: 100%;
+            height: 65px;
+        }
+    }
+
+    .-h3 {
+        margin-top: 29px;
+        margin-bottom: 4px;
+    }
+
+    .paragraph {
+        margin-bottom: 65px;
+    }
+
+    .-small {
+        font-size: 15px;
+        line-height: 28px;
+
+        width: 90%;
+        margin: 0 auto 24px auto;
+    }
+
+    //Magda, come back to this later, no more anger please
+    // .m-highlights__dish::after:not(:last-child) {
+    //     content: '';
+    //     display: block;
+    //     width: 87.2vw;
+    //     transform: translateX(-4.8vw);
+    //     height: 1px;
+    //     background-color: $color-gray;
+    //     margin-top: 26px;
+    // }
 }
