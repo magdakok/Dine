@@ -1,6 +1,12 @@
 .o-events {
     padding-top: 81px;
     padding-bottom: 124px;
+
+    .m-events__imgBox {
+        img {
+            box-shadow: $blured-shadow;
+        }
+    }
  
     .m-events__box {
         display: flex;
