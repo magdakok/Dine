@@ -26,23 +26,22 @@ ul {
 body {
   font-family: 'Spartan', sans-serif;
   font-size: 15px;
-  font-weight: 400;
   color: #242b37;
 }
 
-.h1 {
+.-h1 {
   font-size: 32px;
   font-weight: 300;
   line-height: 40px;
 }
 
-.h2 {
+.-h2 {
   font-size: 32px;
   font-weight: 700;
   line-height: 40px;
 }
 
-.h3 {
+.-h3 {
   font-size: 18px;
   font-weight: 700;
   line-height: 28px;
@@ -77,11 +76,21 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   padding-top: 232px;
+  padding-bottom: 152px;
   text-align: center;
 }
 
 .o-header__logo {
-  width: 22%;
+  width: 25%;
+}
+
+.o-header .-h1 {
+  margin-top: 31px;
+  margin-bottom: 23px;
+}
+
+.o-header .paragraph {
+  margin-bottom: 27px;
 }
 
 .o-highlights {
@@ -89,7 +98,7 @@ body {
 }
 
 body > * {
-  padding-left: 6.4%;
-  padding-right: 6.4%;
+  padding-left: 5.5%;
+  padding-right: 5.5%;
 }
 /*# sourceMappingURL=main.css.map */

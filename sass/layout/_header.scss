@@ -4,9 +4,19 @@
     background-repeat: no-repeat;
     background-position: top center;
     padding-top: 232px;
+    padding-bottom: 152px;
     text-align: center;
 
     &__logo {
-        width: 22%;
+        width: 25%;
+    }
+
+    .-h1 {
+        margin-top: 31px;
+        margin-bottom: 23px;
+    }
+
+    .paragraph {
+        margin-bottom: 27px;
     }
 }
