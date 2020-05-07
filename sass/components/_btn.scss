@@ -1,14 +1,16 @@
 .a-btnCta {
     padding: 25px 54px;
-    border: 1px solid $color-white;
-    background-color: transparent;
     display: inline-block;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 14px;
     font-weight: 400;
     letter-spacing: 2px;
+}
 
+.btn-transparent {
+    border: 1px solid $color-white;
+    background-color: transparent;
     &:link,
     &:visited {
         color: $color-white;
@@ -19,5 +21,20 @@
         background-color: $color-white;
         color: $color-gray-dark;
     }
+}
 
+.btn-black {
+    border: 1px solid $color-gray-dark;
+    background-color: $color-gray-dark;
+
+    &:link,
+    &:visited {
+        color: $color-white;
+    }
+
+    &:hover,
+    &:active {
+        background-color: $color-white;
+        color: $color-gray-dark;;
+    }
 }
