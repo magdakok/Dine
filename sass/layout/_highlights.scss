@@ -1,7 +1,7 @@
 .o-highlights {
     background-color: $color-gray-dark;
     padding-top: 28px;
-    padding-bottom: 28px;
+    padding-bottom: 49px;
 
     .-h2 {
         margin-top: 22px;
@@ -32,14 +32,14 @@
         margin: 0 auto 24px auto;
     }
 
-    //Magda, come back to this later, no more anger please
-    // .m-highlights__dish::after:not(:last-child) {
-    //     content: '';
-    //     display: block;
-    //     width: 87.2vw;
-    //     transform: translateX(-4.8vw);
-    //     height: 1px;
-    //     background-color: $color-gray;
-    //     margin-top: 26px;
-    // }
+    .m-highlights__dish:not(:last-child)::after {
+        content: '';
+        display: block;
+        width: 87.2vw;
+        height: 1px;
+        background-color: $color-gray;
+        
+        margin-top: 26px;
+        margin-bottom: 24px;
+    }
 }

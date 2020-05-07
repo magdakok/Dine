@@ -143,7 +143,7 @@ body {
 .o-highlights {
   background-color: #111111;
   padding-top: 28px;
-  padding-bottom: 28px;
+  padding-bottom: 49px;
 }
 
 .o-highlights .-h2 {
@@ -172,6 +172,16 @@ body {
   line-height: 28px;
   width: 90%;
   margin: 0 auto 24px auto;
+}
+
+.o-highlights .m-highlights__dish:not(:last-child)::after {
+  content: '';
+  display: block;
+  width: 87.2vw;
+  height: 1px;
+  background-color: #242b37;
+  margin-top: 26px;
+  margin-bottom: 24px;
 }
 
 body > * {
