@@ -31,5 +31,11 @@ menuItems.forEach((item,i) => {
         eventHeading.innerText = events[i].title;
         eventText.innerText = events[i].description;
         eventImg.src = events[i].image;
+
+        //works but it's ugly, must be better way to remove active class:
+        menuItems.forEach(item => {
+            item.classList.remove('-active');
+        })
+        item.classList.toggle('-active');
     })
 })
