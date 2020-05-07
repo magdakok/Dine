@@ -87,6 +87,31 @@ body {
   color: #111111;
 }
 
+.o-features .m-feature:first-child {
+  margin-top: -73px;
+}
+
+.o-features .m-feature__imgBox img {
+  -webkit-box-shadow: 0px 21px 63px 0px rgba(112, 112, 112, 0.8);
+          box-shadow: 0px 21px 63px 0px rgba(112, 112, 112, 0.8);
+}
+
+.o-features .-h2 {
+  margin-top: 22px;
+  margin-bottom: 14px;
+}
+
+.o-features .-h2::before {
+  content: url(../../images/patterns/pattern-divide.svg);
+  display: block;
+  width: 100%;
+  height: 65px;
+}
+
+.o-features .paragraph {
+  margin-bottom: 80px;
+}
+
 .o-footer {
   background-color: #111111;
 }

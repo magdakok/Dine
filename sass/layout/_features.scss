@@ -1,0 +1,29 @@
+.o-features {
+    .m-feature {
+        &:first-child {
+            margin-top: -73px;
+        }
+
+        &__imgBox {
+            img {
+                box-shadow: $blured-shadow;
+            }
+        }
+    }
+
+    .-h2 {
+        margin-top: 22px;
+        margin-bottom: 14px;
+
+        &::before {
+            content: url(../../images/patterns/pattern-divide.svg);
+            display: block;
+            width: 100%;
+            height: 65px;
+        }
+    }
+
+    .paragraph {
+        margin-bottom: 80px; //goes perfectly as bottom margin of the section
+    }
+}
