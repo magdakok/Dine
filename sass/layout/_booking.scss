@@ -1,0 +1,29 @@
+.o-booking {
+    background-color: $color-gray-dark;
+    background-image: url(./../images/booking/hero-bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-top: 56px;
+    padding-bottom: 228px;
+
+    &__logo {
+        width: 25%;
+    }
+
+    .-h1 {
+        margin-top: 38px;
+        margin-bottom: 16px;
+    }
+
+    .paragraph {
+        margin-bottom: 23px;
+        margin-left: -1%;
+        margin-right: -1%;
+    }
+}
+
+.o-bookingForm {
+    padding-top: 56px;
+    padding-bottom: 152px;
+}
