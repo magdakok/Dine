@@ -26,26 +26,30 @@
         <div class="form__group">
             <input type="email" name="email" id="email" placeholder="Email" required>
         </div>
-        <div class="form__group -date">
+        <div class="form__group form__group-date">
             <label for="date">Pick a date</label>
-            <input type="number" name="month" id="month" required>
-            <input type="number" name="day" id="day" required>
-            <input type="number" name="year" id="year" required>
+            <div class="form__dateBox">
+                <input type="number" name="month" id="month" min="1" max="12" placeholder="MM" required>
+                <input type="number" name="day" id="day" min="1" max="31" placeholder="DD" required>
+                <input type="number" name="year" id="year" min="2020" max="2030" placeholder="YYYY" required>
+            </div>
         </div>
-        <div class="form__group -time">
-            <label for="date">Pick a time</label>
-            <input type="number" name="hour" id="hour" required>
-            <input type="number" name="minute" id="minute" required>
-            <select name="daytime" id="daytime" required>
-                <option value="AM">AM</option>
-                <option value="PM">PM</option>
-            </select>
+        <div class="form__group form__group-time">
+            <label for="time">Pick a time</label>
+            <div class="form__timeBox">
+                <input type="number" name="hour" id="hour" min="00" max="12" placeholder="HH" required>
+                <input type="number" name="minute" id="minute" min="00" max="59" placeholder="MM" required>
+                <select name="daytime" id="daytime" required>
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
         </div>
         <div class="form__group">
             <input type="number" name="guests" id="guests" placeholder="guests" required>
         </div>
         <div class="form__group">
-            <input type="submit" id="submit" class="a-btnCta -btnBlack">
+            <input type="submit" id="submit" class="" value="Make reservation">
         </div>
     </form>
   </section>

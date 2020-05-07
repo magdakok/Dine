@@ -29,18 +29,31 @@
 
     .form {
         box-shadow: $blured-shadow;
-        padding: 32px 10%; //for sure bottom is 32px
+        padding: 27px 10% 32px 10%; //for sure bottom is 32px
         margin-top: -194px;
         background-color: $color-white;
+
+        font-size: 18px;
 
         &__group {
             &:not(:last-child) {
                 margin-bottom: 28px;
             }
-        }
 
+            &-date {
+                margin-top: 42px;
+            }
+            &-time {
+                margin-top: 42px;
+            }
+        }
+        
         input,select {
             height: 50px;
+            background-color: rgba($color-brown, 0.2);
+            border: none;
+            border-bottom: 1px solid rgba($color-gray-dark, 0.16);
+            font-size: inherit;
         }
 
         #name {
@@ -51,15 +64,56 @@
             width: 100%;
         }
 
-        input[type=number] {
-            width: 73px;
+        input[type=submit] {
+            background-color: $color-gray-dark;
+            border: 1px solid $color-gray-dark;
+            color: $color-white;
+            line-height: 8px;
+            font-size: 14px;
+            text-transform: uppercase;
+            padding: 31px 0;
+            width: 100%;
+            cursor: pointer;
+
+            &:link,
+            &:visited {
+                color: $color-white;
+            }
+
+            &:hover,
+            &:active {
+                background-color: $color-white;
+                color: $color-gray-dark;;
+            }
         }
 
         label {
             display: block;
+            text-align: left;
         }
     
+        &__dateBox {
+            display: flex;
+            justify-content: space-between;
+
+            input:not(:last-child) {
+                flex: 0 0 27.76%;
+            }
+            input:last-child {
+                flex: 0 0 33.46%;
+            }
+        }
+
+        &__timeBox {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                flex: 0 0 27.76%;
+            }
+            select {
+                flex: 0 0 33.46%;
+            }
+        }
     }
-
-
 }

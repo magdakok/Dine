@@ -137,17 +137,30 @@ body {
 .o-bookingForm .form {
   -webkit-box-shadow: 0px 49px 79px 0px rgba(112, 112, 112, 0.8);
           box-shadow: 0px 49px 79px 0px rgba(112, 112, 112, 0.8);
-  padding: 32px 10%;
+  padding: 27px 10% 32px 10%;
   margin-top: -194px;
   background-color: #FFFFFF;
+  font-size: 18px;
 }
 
 .o-bookingForm .form__group:not(:last-child) {
   margin-bottom: 28px;
 }
 
+.o-bookingForm .form__group-date {
+  margin-top: 42px;
+}
+
+.o-bookingForm .form__group-time {
+  margin-top: 42px;
+}
+
 .o-bookingForm .form input, .o-bookingForm .form select {
   height: 50px;
+  background-color: rgba(158, 127, 102, 0.2);
+  border: none;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.16);
+  font-size: inherit;
 }
 
 .o-bookingForm .form #name {
@@ -158,12 +171,72 @@ body {
   width: 100%;
 }
 
-.o-bookingForm .form input[type=number] {
-  width: 73px;
+.o-bookingForm .form input[type=submit] {
+  background-color: #111111;
+  border: 1px solid #111111;
+  color: #FFFFFF;
+  line-height: 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 31px 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.o-bookingForm .form input[type=submit]:link, .o-bookingForm .form input[type=submit]:visited {
+  color: #FFFFFF;
+}
+
+.o-bookingForm .form input[type=submit]:hover, .o-bookingForm .form input[type=submit]:active {
+  background-color: #FFFFFF;
+  color: #111111;
 }
 
 .o-bookingForm .form label {
   display: block;
+  text-align: left;
+}
+
+.o-bookingForm .form__dateBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.o-bookingForm .form__dateBox input:not(:last-child) {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 27.76%;
+          flex: 0 0 27.76%;
+}
+
+.o-bookingForm .form__dateBox input:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.46%;
+          flex: 0 0 33.46%;
+}
+
+.o-bookingForm .form__timeBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.o-bookingForm .form__timeBox input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 27.76%;
+          flex: 0 0 27.76%;
+}
+
+.o-bookingForm .form__timeBox select {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.46%;
+          flex: 0 0 33.46%;
 }
 
 .o-events {
