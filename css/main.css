@@ -98,7 +98,6 @@ body {
   background-position: top center;
   padding-top: 232px;
   padding-bottom: 152px;
-  text-align: center;
 }
 
 .o-header__logo {
@@ -123,5 +122,6 @@ body {
 body > * {
   padding-left: 6.4%;
   padding-right: 6.4%;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
