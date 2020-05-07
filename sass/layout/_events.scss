@@ -20,6 +20,7 @@
 
         .m-events__item {
             padding: 11.5px 0;
+            cursor: pointer;
 
             &::after {
                 content: '';

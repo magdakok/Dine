@@ -134,6 +134,7 @@ body {
 
 .o-events .m-events__nav .m-events__item {
   padding: 11.5px 0;
+  cursor: pointer;
 }
 
 .o-events .m-events__nav .m-events__item::after {
