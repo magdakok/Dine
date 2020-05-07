@@ -4,6 +4,8 @@
     .m-events__box {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .m-events__nav {
@@ -47,6 +49,6 @@
 
     .paragraph {
         margin-top: 15px;
+        margin-bottom: 31px;
     }
-
 }
