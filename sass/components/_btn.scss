@@ -8,7 +8,7 @@
     letter-spacing: 2px;
 }
 
-.btn-transparent {
+.-btnTransparent {
     border: 1px solid $color-white;
     background-color: transparent;
     &:link,
@@ -23,7 +23,7 @@
     }
 }
 
-.btn-black {
+.-btnBlack {
     border: 1px solid $color-gray-dark;
     background-color: $color-gray-dark;
 

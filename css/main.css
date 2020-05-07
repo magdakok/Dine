@@ -76,30 +76,30 @@ body {
   letter-spacing: 2px;
 }
 
-.btn-transparent {
+.-btnTransparent {
   border: 1px solid #FFFFFF;
   background-color: transparent;
 }
 
-.btn-transparent:link, .btn-transparent:visited {
+.-btnTransparent:link, .-btnTransparent:visited {
   color: #FFFFFF;
 }
 
-.btn-transparent:hover, .btn-transparent:active {
+.-btnTransparent:hover, .-btnTransparent:active {
   background-color: #FFFFFF;
   color: #111111;
 }
 
-.btn-black {
+.-btnBlack {
   border: 1px solid #111111;
   background-color: #111111;
 }
 
-.btn-black:link, .btn-black:visited {
+.-btnBlack:link, .-btnBlack:visited {
   color: #FFFFFF;
 }
 
-.btn-black:hover, .btn-black:active {
+.-btnBlack:hover, .-btnBlack:active {
   background-color: #FFFFFF;
   color: #111111;
 }
@@ -116,6 +116,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .o-events .m-events__nav {
@@ -161,6 +167,7 @@ body {
 
 .o-events .paragraph {
   margin-top: 15px;
+  margin-bottom: 31px;
 }
 
 .o-features .m-feature:first-child {
