@@ -109,6 +109,11 @@ body {
   padding-bottom: 124px;
 }
 
+.o-events .m-events__imgBox img {
+  -webkit-box-shadow: 0px 49px 79px 0px rgba(112, 112, 112, 0.8);
+          box-shadow: 0px 49px 79px 0px rgba(112, 112, 112, 0.8);
+}
+
 .o-events .m-events__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,8 +181,8 @@ body {
 }
 
 .o-features .m-feature__imgBox img {
-  -webkit-box-shadow: 0px 21px 63px 0px rgba(112, 112, 112, 0.8);
-          box-shadow: 0px 21px 63px 0px rgba(112, 112, 112, 0.8);
+  -webkit-box-shadow: 0px 49px 79px 0px rgba(112, 112, 112, 0.8);
+          box-shadow: 0px 49px 79px 0px rgba(112, 112, 112, 0.8);
 }
 
 .o-features .-h2 {
@@ -213,7 +218,7 @@ body {
 
 .o-header {
   background-color: #111111;
-  background-image: url(../../images/homepage/hero-bg-mobile.jpg);
+  background-image: url(./../images/homepage/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   padding-top: 232px;
@@ -282,7 +287,7 @@ body {
 .o-reservation {
   padding-top: 82px;
   padding-bottom: 82px;
-  background-image: url(../../images/homepage/ready-bg-mobile.jpg);
+  background-image: url(./../images/homepage/ready-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
