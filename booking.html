@@ -19,8 +19,35 @@
       <a href="#" class="a-btnCta -btnTransparent">Reserve place</a>
   </header>
   <section class="o-bookingForm">
-
-
+    <form action="" class="form">
+        <div class="form__group">
+            <input type="text" name="name" id="name" placeholder="Name" required>
+        </div>
+        <div class="form__group">
+            <input type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="form__group -date">
+            <label for="date">Pick a date</label>
+            <input type="number" name="month" id="month" required>
+            <input type="number" name="day" id="day" required>
+            <input type="number" name="year" id="year" required>
+        </div>
+        <div class="form__group -time">
+            <label for="date">Pick a time</label>
+            <input type="number" name="hour" id="hour" required>
+            <input type="number" name="minute" id="minute" required>
+            <select name="daytime" id="daytime" required>
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+        </div>
+        <div class="form__group">
+            <input type="number" name="guests" id="guests" placeholder="guests" required>
+        </div>
+        <div class="form__group">
+            <input type="submit" id="submit" class="a-btnCta -btnBlack">
+        </div>
+    </form>
   </section>
 
 

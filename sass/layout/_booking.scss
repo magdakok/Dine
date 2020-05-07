@@ -25,5 +25,41 @@
 
 .o-bookingForm {
     padding-top: 56px;
-    padding-bottom: 152px;
+    padding-bottom: 133px;
+
+    .form {
+        box-shadow: $blured-shadow;
+        padding: 32px 10%; //for sure bottom is 32px
+        margin-top: -194px;
+        background-color: $color-white;
+
+        &__group {
+            &:not(:last-child) {
+                margin-bottom: 28px;
+            }
+        }
+
+        input,select {
+            height: 50px;
+        }
+
+        #name {
+            width: 100%;
+        }
+
+        #email {
+            width: 100%;
+        }
+
+        input[type=number] {
+            width: 73px;
+        }
+
+        label {
+            display: block;
+        }
+    
+    }
+
+
 }
