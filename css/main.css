@@ -106,6 +106,7 @@ body {
 
 .o-events {
   padding-top: 81px;
+  padding-bottom: 124px;
 }
 
 .o-events .m-events__box {
@@ -265,6 +266,18 @@ body {
   background-color: #242b37;
   margin-top: 26px;
   margin-bottom: 24px;
+}
+
+.o-reservation {
+  padding-top: 82px;
+  padding-bottom: 82px;
+  background-image: url(../../images/homepage/ready-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.o-reservation .-h2 {
+  margin-bottom: 19px;
 }
 
 body > * {
