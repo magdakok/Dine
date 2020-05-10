@@ -115,5 +115,13 @@
                 flex: 0 0 33.46%;
             }
         }
+
+        .form__people {
+            display: flex;
+
+            & > * {
+                flex: 0 0 33%;
+            }
+        }
     }
 }
