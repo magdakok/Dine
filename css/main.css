@@ -143,6 +143,30 @@ body {
   font-size: 18px;
 }
 
+.o-bookingForm .form__group {
+  position: relative;
+}
+
+.o-bookingForm .form__group.successs input {
+  background-color: lawngreen;
+}
+
+.o-bookingForm .form__group.error input {
+  background-color: red;
+}
+
+.o-bookingForm .form__group small {
+  background-color: red;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  visibility: hidden;
+}
+
+.o-bookingForm .form__group.error small {
+  visibility: visible;
+}
+
 .o-bookingForm .form__group:not(:last-child) {
   margin-bottom: 28px;
 }
@@ -161,6 +185,13 @@ body {
   border: none;
   border-bottom: 1px solid rgba(17, 17, 17, 0.16);
   font-size: inherit;
+  text-align: center;
+  padding: 10px;
+}
+
+.o-bookingForm .form input:focus, .o-bookingForm .form select:focus {
+  outline: none;
+  border-bottom: 3px solid rgba(17, 17, 17, 0.16);
 }
 
 .o-bookingForm .form #name {

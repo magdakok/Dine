@@ -19,31 +19,35 @@
       <a href="#" class="a-btnCta -btnTransparent">Reserve place</a>
   </header>
   <section class="o-bookingForm">
-    <form action="" class="form">
+    <form id="form" class="form">
         <div class="form__group">
-            <input type="text" name="name" id="name" placeholder="Name" required>
+            <input type="text" name="name" id="name" placeholder="Name">
+            <small>Error message</small>
         </div>
         <div class="form__group">
-            <input type="email" name="email" id="email" placeholder="Email" required>
+            <input type="text" name="email" id="email" placeholder="Email">
+            <small>Error message</small>
         </div>
         <div class="form__group form__group-date">
             <label for="date">Pick a date</label>
             <div class="form__dateBox">
-                <input type="number" name="month" id="month" min="1" max="12" placeholder="MM" required>
-                <input type="number" name="day" id="day" min="1" max="31" placeholder="DD" required>
-                <input type="number" name="year" id="year" min="2020" max="2030" placeholder="YYYY" required>
+                <input type="number" name="month" id="month" min="1" max="12" placeholder="MM">
+                <input type="number" name="day" id="day" min="1" max="31" placeholder="DD">
+                <input type="number" name="year" id="year" min="2020" max="2030" placeholder="YYYY">
             </div>
+            <small>Error message</small>
         </div>
         <div class="form__group form__group-time">
             <label for="time">Pick a time</label>
             <div class="form__timeBox">
-                <input type="number" name="hour" id="hour" min="00" max="12" placeholder="HH" required>
-                <input type="number" name="minute" id="minute" min="00" max="59" placeholder="MM" required>
-                <select name="daytime" id="daytime" required>
+                <input type="number" name="hour" id="hour" min="00" max="12" placeholder="HH">
+                <input type="number" name="minute" id="minute" min="00" max="59" placeholder="MM">
+                <select name="daytime" id="daytime">
                     <option value="AM">AM</option>
                     <option value="PM">PM</option>
                 </select>
             </div>
+            <small>Error message</small>
         </div>
         <div class="form__group">
             <div class="form__people">
@@ -53,7 +57,7 @@
             </div>
         </div>
         <div class="form__group">
-            <input type="submit" id="submit" class="" value="Make reservation">
+           <button class="a-btnSubmit" id="btnSubmit">Make reservation</button>
         </div>
     </form>
   </section>
@@ -74,5 +78,5 @@
   </footer>
 
 </body>
-<script src="script/events.js"></script>
+<script src="script/form-validation.js"></script>
 </html>
