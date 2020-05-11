@@ -148,11 +148,28 @@ body {
 }
 
 .o-bookingForm .form__group small {
-  background-color: red;
+  color: #B54949;
+  font-size: 10px;
   position: absolute;
-  bottom: -15px;
+  bottom: -18px;
   left: 0;
   visibility: hidden;
+}
+
+.o-bookingForm .form__group.error input::-webkit-input-placeholder {
+  color: #B54949;
+}
+
+.o-bookingForm .form__group.error input:-ms-input-placeholder {
+  color: #B54949;
+}
+
+.o-bookingForm .form__group.error input::-ms-input-placeholder {
+  color: #B54949;
+}
+
+.o-bookingForm .form__group.error input::placeholder {
+  color: #B54949;
 }
 
 .o-bookingForm .form__group.error small {
@@ -176,7 +193,7 @@ body {
 }
 
 .o-bookingForm .form .errorColor {
-  background-color: red;
+  border-bottom: 1px solid #B54949;
 }
 
 .o-bookingForm .form input, .o-bookingForm .form select {
@@ -191,7 +208,7 @@ body {
 
 .o-bookingForm .form input:focus, .o-bookingForm .form select:focus {
   outline: none;
-  border-bottom: 3px solid rgba(17, 17, 17, 0.16);
+  border-bottom: 1px solid #111111;
 }
 
 .o-bookingForm .form #name {

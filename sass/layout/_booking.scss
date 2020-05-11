@@ -39,14 +39,18 @@
             position: relative;
 
             small {
-                background-color: red;
+                color: $color-error;
 
+                font-size: 10px;
                 position: absolute;
-                bottom: -15px;
+                bottom: -18px;
                 left: 0;
                 visibility: hidden;
             }
 
+            &.error input::placeholder {
+                color: $color-error;
+            }
             &.error small {
                 visibility: visible;
             }
@@ -69,7 +73,7 @@
         }
 
         .errorColor  {
-            background-color: red;
+            border-bottom: 1px solid $color-error;
         }
         
         input,select {
@@ -84,7 +88,7 @@
             //change the border style later
             &:focus {
                 outline: none;
-                border-bottom: 3px solid rgba($color-gray-dark, 0.16);
+                border-bottom: 1px solid $color-gray-dark;
             }
         }
 

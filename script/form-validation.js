@@ -40,12 +40,14 @@ const timeValidation = [
 
 function correctName() {
     if (!name.value) {
+        name.classList.add('errorColor');
         printError(name,'This field is required');
     }
 };
 
 function correctEmail() {
     if (!email.value) {
+        email.classList.add('errorColor');
         printError(email,'This field is required');
     } 
     //else if email doesn't contain @ printError(email, 'This is not an email address');
