@@ -38,14 +38,6 @@
         &__group {
             position: relative;
 
-            &.successs input {
-                background-color: lawngreen;
-            }
-
-            &.error input {
-                background-color: red;
-            }
-            
             small {
                 background-color: red;
 
@@ -70,6 +62,14 @@
             &-time {
                 margin-top: 42px;
             }
+        }
+
+        .successs  {
+            background-color: lawngreen;
+        }
+
+        .errorColor  {
+            background-color: red;
         }
         
         input,select {

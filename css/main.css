@@ -147,14 +147,6 @@ body {
   position: relative;
 }
 
-.o-bookingForm .form__group.successs input {
-  background-color: lawngreen;
-}
-
-.o-bookingForm .form__group.error input {
-  background-color: red;
-}
-
 .o-bookingForm .form__group small {
   background-color: red;
   position: absolute;
@@ -177,6 +169,14 @@ body {
 
 .o-bookingForm .form__group-time {
   margin-top: 42px;
+}
+
+.o-bookingForm .form .successs {
+  background-color: lawngreen;
+}
+
+.o-bookingForm .form .errorColor {
+  background-color: red;
 }
 
 .o-bookingForm .form input, .o-bookingForm .form select {
