@@ -322,6 +322,16 @@ body {
   cursor: pointer;
 }
 
+.o-bookingForm .form .form__people .plusminus:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.o-bookingForm .form .form__people .plusminus:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .o-bookingForm .form .form__people .-inactive {
   color: rgba(158, 127, 102, 0.1);
 }

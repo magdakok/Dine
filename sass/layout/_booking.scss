@@ -158,6 +158,14 @@
             .plusminus {
                 color: $color-brown;
                 cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.5);
+                }
+
+                &:active {
+                    transform: scale(1.2);
+                }
             }
 
             .-inactive {
