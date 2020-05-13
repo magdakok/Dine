@@ -149,9 +149,19 @@
         .form__people {
             display: flex;
             margin-top: 42px;
+            font-weight: 700;
 
             & > * {
                 flex: 0 0 33%;
+            }
+
+            .plusminus {
+                color: $color-brown;
+                cursor: pointer;
+            }
+
+            .-inactive {
+                color: rgba($color-brown, 0.1);
             }
         }
     }
