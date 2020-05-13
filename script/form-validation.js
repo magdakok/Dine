@@ -1,6 +1,7 @@
 const form = document.getElementById('form');
 const name = document.getElementById('name');
 const email = document.getElementById('email');
+const inputs = document.querySelectorAll('input');
 
 const dateValidation = [
     {
@@ -41,52 +42,94 @@ const timeValidation = [
 function correctName() {
     if (!name.value) {
         name.classList.add('errorColor');
-        printError(name,'This field is required');
+        printError(name,'This field is required', true);
+        addFocusoutCheck(name,correctName);
+    } else {
+        name.classList.remove('errorColor');
+        printError(name);
     }
 };
 
 function correctEmail() {
+    const emailTemplate = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!email.value) {
         email.classList.add('errorColor');
-        printError(email,'This field is required');
-    } 
-    //else if email doesn't contain @ printError(email, 'This is not an email address');
+        printError(email,'This field is required', true);
+        addFocusoutCheck(email,correctEmail);
+    } else if (!emailTemplate.test(String(email.value).toLowerCase())) {
+        email.classList.add('errorColor');
+        printError(email,'Invalid email address', true);
+        addFocusoutCheck(email,correctEmail);
+    } else {
+        email.classList.remove('errorColor');
+        printError(email);
+    }
 };
 
-function correctNumberValues() {
+
+function correctDate () {
     dateValidation.forEach(el => {
         if (el.element.value === '') {
             el.element.classList.add('errorColor');
-            printError(el.element.parentElement, 'This field is required');
+            printError(el.element.parentElement, 'This field is required', true);
+            addFocusoutCheck(el.element,correctDate);
+        } else {
+            if (dateValidation[0].element.value !== '' && dateValidation[1].element.value !== '' && dateValidation[2].element.value !== '') {
+                el.element.classList.remove('errorColor');
+                printError(el.element.parentElement);
+            }
+            el.element.classList.remove('errorColor');
         }
     });
+}
+
+function correctTime () {
     timeValidation.forEach(el => {
         if (el.element.value === '') {
             el.element.classList.add('errorColor');
-            printError(el.element.parentElement, 'This field is required');
+            printError(el.element.parentElement, 'This field is required', true);
+            addFocusoutCheck(el.element,correctTime);
+        } else {
+            if (timeValidation[0].element.value !== '' && timeValidation[1].element.value !== '') {
+                el.element.classList.remove('errorColor');
+                printError(el.element.parentElement);
+            }
+            el.element.classList.remove('errorColor');
         }
     });
 }
 
 
-function printError (formElement, err) {
+function printError (formElement, err, whatToDo) {
     //get the parent element of the input
-    console.log(formElement);
     const parent = formElement.parentElement;
-    //add error class
-    parent.classList.add('error');
     //get error message box
     const small = parent.querySelector('small');
-    //prints error message
-    small.innerText = err;
+
+    if (whatToDo) {
+        //add error class
+        parent.classList.add('error');
+        //prints error message
+        small.innerText = err;
+    } else {
+        //remove error class
+        parent.classList.remove('error');
+        //removes error message
+        small.innerText = '';
+    }
+    
 };
+
+function addFocusoutCheck (inp,fn) {
+    inp.addEventListener('focusout', fn);
+}
 
 // Event listeners
 form.addEventListener('submit', function(e){
     e.preventDefault();
     correctName();
     correctEmail();
-    correctNumberValues();
-    //here start all checking functions
+    correctDate();
+    correctTime();
 });
 
