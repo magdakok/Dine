@@ -31,13 +31,13 @@ plus.addEventListener('click', ()=> {
 
 
 // MOUSE OVER AND OUT PEOPLE NUMBER ELEMENT
-minus.addEventListener('mouseover', ()=> {
+minus.addEventListener('click', ()=> {
     formPeople.classList.add('-plusminusActive');
 });
 minus.addEventListener('mouseout', ()=> {
     formPeople.classList.remove('-plusminusActive');
 });
-plus.addEventListener('mouseover', ()=> {
+plus.addEventListener('click', ()=> {
     formPeople.classList.add('-plusminusActive');
 });
 plus.addEventListener('mouseout', ()=> {
