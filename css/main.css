@@ -198,7 +198,6 @@ body {
 
 .o-bookingForm .form input, .o-bookingForm .form select {
   height: 50px;
-  background-color: rgba(158, 127, 102, 0.2);
   border: none;
   border-bottom: 1px solid rgba(17, 17, 17, 0.16);
   font-size: inherit;

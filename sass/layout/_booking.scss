@@ -78,14 +78,13 @@
         
         input,select {
             height: 50px;
-            background-color: rgba($color-brown, 0.2);
+            // background-color: rgba($color-brown, 0.2);
             border: none;
             border-bottom: 1px solid rgba($color-gray-dark, 0.16);
             font-size: inherit;
             text-align: center;
             padding: 10px;
 
-            //change the border style later
             &:focus {
                 outline: none;
                 border-bottom: 1px solid $color-gray-dark;
