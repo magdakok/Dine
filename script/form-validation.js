@@ -58,7 +58,7 @@ function correctEmail() {
         addFocusoutCheck(email,correctEmail);
     } else if (!emailTemplate.test(String(email.value).toLowerCase())) {
         email.classList.add('errorColor');
-        printError(email,'Invalid email address', true);
+        printError(email,'Please use a valid email address', true);
         addFocusoutCheck(email,correctEmail);
     } else {
         email.classList.remove('errorColor');
@@ -71,7 +71,7 @@ function correctDate () {
     dateValidation.forEach(el => {
         if (el.element.value === '') {
             el.element.classList.add('errorColor');
-            printError(el.element.parentElement, 'This field is required', true);
+            printError(el.element.parentElement, 'This field is incomplete', true);
             addFocusoutCheck(el.element,correctDate);
         } else {
             if (dateValidation[0].element.value !== '' && dateValidation[1].element.value !== '' && dateValidation[2].element.value !== '') {
@@ -87,7 +87,7 @@ function correctTime () {
     timeValidation.forEach(el => {
         if (el.element.value === '') {
             el.element.classList.add('errorColor');
-            printError(el.element.parentElement, 'This field is required', true);
+            printError(el.element.parentElement, 'This field is incomplete', true);
             addFocusoutCheck(el.element,correctTime);
         } else {
             if (timeValidation[0].element.value !== '' && timeValidation[1].element.value !== '') {
