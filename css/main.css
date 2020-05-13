@@ -152,7 +152,7 @@ body {
 
 .o-bookingForm {
   padding-top: 56px;
-  padding-bottom: 133px;
+  padding-bottom: 84px;
 }
 
 .o-bookingForm .form {
@@ -207,10 +207,6 @@ body {
 
 .o-bookingForm .form__group-time {
   margin-top: 42px;
-}
-
-.o-bookingForm .form .successs {
-  background-color: lawngreen;
 }
 
 .o-bookingForm .form .errorColor {
