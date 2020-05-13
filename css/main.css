@@ -309,6 +309,8 @@ body {
   display: flex;
   margin-top: 42px;
   font-weight: 700;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.16);
 }
 
 .o-bookingForm .form .form__people > * {
@@ -334,6 +336,10 @@ body {
 
 .o-bookingForm .form .form__people .-inactive {
   color: rgba(158, 127, 102, 0.1);
+}
+
+.o-bookingForm .-plusminusActive {
+  border-bottom: 1px solid #111111 !important;
 }
 
 .o-events {
