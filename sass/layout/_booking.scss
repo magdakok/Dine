@@ -61,7 +61,7 @@
             }
 
             &-date {
-                margin-top: 42px;
+                margin-top: 37px;
             }
             &-time {
                 margin-top: 42px;
@@ -153,6 +153,7 @@
 
         .form__people {
             display: flex;
+            margin-top: 42px;
 
             & > * {
                 flex: 0 0 33%;

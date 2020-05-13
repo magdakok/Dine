@@ -104,6 +104,27 @@ body {
   color: #111111;
 }
 
+.a-btnSubmit {
+  padding: 25px 0;
+  width: 100%;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  cursor: pointer;
+  border: 1px solid #111111;
+  background-color: #111111;
+  margin-top: 23px;
+}
+
+.a-btnSubmit:hover, .a-btnSubmit:active {
+  background-color: #FFFFFF;
+  color: #111111;
+}
+
 .o-booking {
   background-color: #111111;
   background-image: url(./../images/booking/hero-bg-mobile.jpg);
@@ -181,7 +202,7 @@ body {
 }
 
 .o-bookingForm .form__group-date {
-  margin-top: 42px;
+  margin-top: 37px;
 }
 
 .o-bookingForm .form__group-time {
@@ -290,6 +311,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 42px;
 }
 
 .o-bookingForm .form .form__people > * {
