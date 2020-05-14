@@ -158,6 +158,11 @@
 
             }
 
+            .-mirror {
+                transform: scaleY(-1);
+            
+            }
+
             .m-daytime__options {
                 background-color: yellowgreen;
                 transform: translateX(10px);

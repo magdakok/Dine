@@ -314,6 +314,11 @@ body {
   cursor: pointer;
 }
 
+.o-bookingForm .form__timeBox .-mirror {
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+
 .o-bookingForm .form__timeBox .m-daytime__options {
   background-color: yellowgreen;
   -webkit-transform: translateX(10px);
