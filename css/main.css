@@ -289,6 +289,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .o-bookingForm .form__timeBox input {
@@ -297,10 +298,48 @@ body {
           flex: 0 0 27.76%;
 }
 
-.o-bookingForm .form__timeBox select {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.46%;
-          flex: 0 0 33.46%;
+.o-bookingForm .form__timeBox .m-daytime__box {
+  border-bottom: 1px solid rgba(17, 17, 17, 0.16);
+  padding: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.o-bookingForm .form__timeBox .a-arrow {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.o-bookingForm .form__timeBox .m-daytime__options {
+  background-color: yellowgreen;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  z-index: 10;
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+  padding: 20px 25px 20px 15px;
+}
+
+.o-bookingForm .form__timeBox .a-tick {
+  margin-right: 10px;
+}
+
+.o-bookingForm .form__timeBox .m-daytime__options-AM {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.o-bookingForm .form__timeBox .m-daytime__options-PM {
+  cursor: pointer;
+}
+
+.o-bookingForm .form__timeBox .-hidden {
+  opacity: 0;
 }
 
 .o-bookingForm .form .form__people {

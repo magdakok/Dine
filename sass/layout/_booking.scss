@@ -113,7 +113,7 @@
             &:hover,
             &:active {
                 background-color: $color-white;
-                color: $color-gray-dark;;
+                color: $color-gray-dark;
             }
         }
 
@@ -137,12 +137,51 @@
         &__timeBox {
             display: flex;
             justify-content: space-between;
+            position: relative;
 
             input {
                 flex: 0 0 27.76%;
             }
-            select {
-                flex: 0 0 33.46%;
+
+            .m-daytime__box {
+                border-bottom: 1px solid rgba($color-gray-dark, 0.16);
+                padding: 14px;
+
+                display: flex;
+                align-items: flex-end;
+
+            }
+
+            .a-arrow {
+                padding-left: 10px;
+                cursor: pointer;
+
+            }
+
+            .m-daytime__options {
+                background-color: yellowgreen;
+                transform: translateX(10px);
+                z-index: 10;
+                position: absolute;
+                bottom: -100px;
+                right: 0;
+                padding: 20px 25px 20px 15px;
+            }
+
+            .a-tick {
+                margin-right: 10px;
+            }
+
+            .m-daytime__options-AM {
+                margin-bottom: 15px;
+                cursor: pointer;
+            }
+            .m-daytime__options-PM {
+                cursor: pointer;
+            }
+
+            .-hidden {
+                opacity: 0;
             }
         }
 
