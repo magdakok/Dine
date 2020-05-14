@@ -73,11 +73,10 @@
         }
         
         input,select {
-            height: 50px;
+            height: 51px;
             border: none;
             border-bottom: 1px solid rgba($color-gray-dark, 0.16);
             font-size: inherit;
-            text-align: center;
             padding: 10px;
 
             &:focus {
@@ -196,7 +195,7 @@
             display: flex;
             margin-top: 42px;
             font-weight: 700;
-            padding-bottom: 10px;
+            padding-bottom: 15px;
             border-bottom: 1px solid rgba($color-gray-dark, 0.16);
 
             & > * {

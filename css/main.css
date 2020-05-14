@@ -117,7 +117,7 @@ body {
   cursor: pointer;
   border: 1px solid #111111;
   background-color: #111111;
-  margin-top: 23px;
+  margin-top: 3px;
 }
 
 .a-btnSubmit:hover, .a-btnSubmit:active {
@@ -214,11 +214,10 @@ body {
 }
 
 .o-bookingForm .form input, .o-bookingForm .form select {
-  height: 50px;
+  height: 51px;
   border: none;
   border-bottom: 1px solid rgba(17, 17, 17, 0.16);
   font-size: inherit;
-  text-align: center;
   padding: 10px;
 }
 
@@ -362,7 +361,7 @@ body {
   display: flex;
   margin-top: 42px;
   font-weight: 700;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   border-bottom: 1px solid rgba(17, 17, 17, 0.16);
 }
 
