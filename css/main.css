@@ -123,6 +123,7 @@ body {
 .a-btnSubmit:hover, .a-btnSubmit:active {
   background-color: #FFFFFF;
   color: #111111;
+  outline: none;
 }
 
 .o-booking {
@@ -365,13 +366,16 @@ body {
   border-bottom: 1px solid rgba(17, 17, 17, 0.16);
 }
 
-.o-bookingForm .form .form__people > * {
+.o-bookingForm .form .form__people .form__people-middle {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 33%;
-          flex: 0 0 33%;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
 }
 
 .o-bookingForm .form .form__people .plusminus {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
   color: #9e7f66;
   cursor: pointer;
 }

@@ -198,11 +198,12 @@
             padding-bottom: 15px;
             border-bottom: 1px solid rgba($color-gray-dark, 0.16);
 
-            & > * {
-                flex: 0 0 33%;
+            .form__people-middle {
+                flex: 0 0 60%;
             }
 
             .plusminus {
+                flex: 0 0 20%;
                 color: $color-brown;
                 cursor: pointer;
 
