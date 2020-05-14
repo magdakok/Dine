@@ -4,7 +4,8 @@ const tickAM = document.getElementById('tickAM');
 const optionAM = document.querySelector('.m-daytime__options-AM');
 const optionPM = document.querySelector('.m-daytime__options-PM'); 
 const tickPM = document.getElementById('tickPM'); // default hidden
-const optionsBox = document.querySelector('.m-daytime__options'); //default hidden
+const optionsBox = document.querySelector('.m-daytime__options');
+
 
 arrow.addEventListener('click', ()=> {
     optionsBox.classList.toggle('-hidden');
