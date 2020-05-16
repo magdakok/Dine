@@ -5,6 +5,14 @@
     .m-events__imgBox {
         img {
             box-shadow: $blured-shadow;
+            height: 0;
+            opacity: 0;
+        }
+
+        .-visible {
+            visibility: visible;
+            height: auto;
+            opacity: 1;        
         }
     }
  
