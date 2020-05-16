@@ -20,7 +20,17 @@
   <section class="o-features">
       <div class="m-feature">
         <div class="m-feature__imgBox">
-          <img src="./images/homepage/enjoyable-place-mobile.jpg" alt="Sheep pasture on a meadow">
+          <!-- <img src="./images/homepage/enjoyable-place-mobile.jpg" alt="Sheep pasture on a meadow"> -->
+          <!-- This sizes need to be filled, but after adding media queries -->
+          <img srcset="./images/homepage/enjoyable-place-mobile.jpg 327w, 
+          ./images/homepage/enjoyable-place-mobile@2x.jpg 654w, 
+          ./images/homepage/enjoyable-place-tablet.jpg 573w,
+          ./images/homepage/enjoyable-place-tablet@2x.jpg 1146w,
+          ./images/homepage/enjoyable-place-desktop.jpg 540w,
+          ./images/homepage/enjoyable-place-desktop@2x.jpg 1080w" 
+          sizes="327px"
+          alt="Sheep pasture on a meadow"
+          src="./images/homepage/enjoyable-place-mobile.jpg">
         </div>
         <div class="m-feature__textBox">
           <h2 class="heading -h2 -black">Enjoyable place for all the family</h2>
@@ -80,7 +90,9 @@
 
   <section class="o-events">
     <div class="m-events__imgBox"> 
-      <img src="./images/homepage/family-gathering-mobile.jpg" id="eventImg" alt="Family members grabbing food from the table">
+      <img src="./images/homepage/family-gathering-mobile.jpg" class="m-event__img -visible" id="familyGatheringImg" alt="Family members grabbing food from the table">
+      <img src="./images/homepage/special-events-mobile.jpg" class="m-event__img" id="specialEventsImg" alt="Smiling family sitting by the table raising their drinks">
+      <img src="./images/homepage/social-events-mobile.jpg" class="m-event__img" id="socialEventsImg" alt="Wine glasses on the table surrounded by people">
     </div>
     <div class="m-events__box">
       <div class="m-events__textBox">
