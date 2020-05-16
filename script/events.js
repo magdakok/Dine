@@ -16,7 +16,22 @@ const events = [
     }
 ];
 
-console.log(events['1'].title);
+
+//preloads events images to display them without any wait
+let images = [];
+function preload() {
+    for (var i = 0; i < imags.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.imgs[i];
+    }
+}
+
+preload(
+    "./images/homepage/family-gathering-mobile.jpg",
+    "./images/homepage/special-events-mobile.jpg",
+    "./images/homepage/social-events-mobile.jpg"
+)
+
 
 // DOM VARIABLES
 const eventImg = document.querySelector('#eventImg');
