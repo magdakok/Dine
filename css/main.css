@@ -74,6 +74,27 @@ body {
   line-height: 14px;
   font-weight: 400;
   letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.a-btnCta::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 45px;
+  height: 100%;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+  -webkit-transform: skewX(-40deg) translateX(-70px);
+          transform: skewX(-40deg) translateX(-70px);
+}
+
+.-shineAnimation .a-btnCta::before {
+  -webkit-transform: skewX(-40deg) translateX(300px);
+          transform: skewX(-40deg) translateX(300px);
 }
 
 .-btnTransparent {

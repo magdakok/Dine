@@ -6,6 +6,29 @@
     line-height: 14px;
     font-weight: 400;
     letter-spacing: 2px;
+
+    position: relative;
+    overflow: hidden;
+
+    // shine effect on all the buttons
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        background-color: rgba($color-white, 0.3);
+        width: 45px;
+        height: 100%;
+        transition: all .6s ease-in-out;
+        transform: skewX(-40deg) translateX(-70px);
+    }
+}
+
+// shine animation on all the buttons triggered when scrolling
+.-shineAnimation {
+    .a-btnCta::before {
+        transform: skewX(-40deg) translateX(300px);
+    }
 }
 
 .-btnTransparent {
