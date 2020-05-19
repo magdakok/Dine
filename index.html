@@ -100,9 +100,47 @@
 
   <section class="o-events">
     <div class="m-events__imgBox"> 
-      <img src="./images/homepage/family-gathering-mobile.jpg" class="m-event__img -visible" id="familyGatheringImg" alt="Family members grabbing food from the table">
-      <img src="./images/homepage/special-events-mobile.jpg" class="m-event__img" id="specialEventsImg" alt="Smiling family sitting by the table raising their drinks">
-      <img src="./images/homepage/social-events-mobile.jpg" class="m-event__img" id="socialEventsImg" alt="Wine glasses on the table surrounded by people">
+      <img srcset="./images/homepage/family-gathering-mobile.jpg 326w, 
+      ./images/homepage/family-gathering-mobile@2x.jpg 652w, 
+      ./images/homepage/family-gathering-tablet.jpg 573w,
+      ./images/homepage/family-gathering-tablet@2x.jpg 1146w,
+      ./images/homepage/family-gathering-desktop.jpg 540w,
+      ./images/homepage/family-gathering-desktop@2x.jpg 1080w" 
+      sizes="
+      (max-width: 48em) 87vw,
+      (min-width: 48em) 75vw,
+      326px"
+      class="m-event__img -visible" id="familyGatheringImg"
+      alt="Family members grabbing food from the table"
+      src="./images/homepage/family-gathering-mobile.jpg">
+
+      <img srcset="./images/homepage/family-gathering-mobile.jpg 326w, 
+      ./images/homepage/special-events-mobile@2x.jpg 652w, 
+      ./images/homepage/special-events-tablet.jpg 573w,
+      ./images/homepage/special-events-tablet@2x.jpg 1146w,
+      ./images/homepage/special-events-desktop.jpg 540w,
+      ./images/homepage/special-events-desktop@2x.jpg 1080w" 
+      sizes="
+      (max-width: 48em) 87vw,
+      (min-width: 48em) 75vw,
+      326px"
+      class="m-event__img" id="specialEventsImg"
+      alt="Smiling family sitting by the table raising their drinks"
+      src="./images/homepage/special-events-mobile.jpg">
+
+      <img srcset="./images/homepage/family-gathering-mobile.jpg 326w, 
+      ./images/homepage/social-events-mobile@2x.jpg 652w, 
+      ./images/homepage/social-events-tablet.jpg 573w,
+      ./images/homepage/social-events-tablet@2x.jpg 1146w,
+      ./images/homepage/social-events-desktop.jpg 540w,
+      ./images/homepage/social-events-desktop@2x.jpg 1080w" 
+      sizes="
+      (max-width: 48em) 87vw,
+      (min-width: 48em) 75vw,
+      326px"
+      class="m-event__img" id="socialEventsImg"
+      alt="Wine glasses on the table surrounded by people"
+      src="./images/homepage/social-events-mobile.jpg">
     </div>
     <div class="m-events__box">
       <div class="m-events__textBox">
