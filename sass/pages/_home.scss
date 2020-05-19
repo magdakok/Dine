@@ -3,6 +3,11 @@ body > * {
     padding-left: $padding-mobile;
     padding-right: $padding-mobile;
     text-align: center;
+
+    @media only screen and (min-width: 48em) {
+        padding-left: $padding-tablet;
+        padding-right: $padding-tablet;
+    }
 }
 
 img {

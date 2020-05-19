@@ -1,7 +1,15 @@
 .o-features {
+    @media only screen and (min-width: 48em) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .m-feature {
         &:first-child {
             margin-top: -73px;
+            @media only screen and (min-width: 48em) {
+                margin-top: -97px;
+            }
         }
 
         &__imgBox {
@@ -21,9 +29,18 @@
             width: 100%;
             height: 65px;
         }
+
+        @media only screen and (min-width: 48em) {
+            width: 50%;
+            margin: 27px auto 14px auto;
+        }
     }
 
     .paragraph {
         margin-bottom: 80px; //goes perfectly as bottom margin of the section
+        @media only screen and (min-width: 48em) {
+            width: 60%;
+            margin: 0 auto 120px auto;
+        }
     }
 }

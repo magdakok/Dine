@@ -2,19 +2,31 @@ body {
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
     color: $color-gray;
+
+    @media only screen and (min-width: 48em) {
+        font-size: 18px;
+    }
 }
 
 .-h1 {
     font-size: 32px;
     font-weight: 300;
     line-height: 40px;
+
+    @media only screen and (min-width: 48em) {
+        font-size: 48px;
+        line-height: 64px;
+    }
 }
 
 .-h2 {
     font-size: 32px;
     font-weight: 700;
     line-height: 40px;
-
+    @media only screen and (min-width: 48em) {
+        font-size: 40px;
+        line-height: 56px;
+    }
 }
 
 .-h3 {
@@ -25,6 +37,10 @@ body {
 
 .paragraph {
     line-height: 25px;
+
+    @media only screen and (min-width: 48em) {
+        line-height: 30px;
+    }
 }
 
 .-white {

@@ -3,11 +3,35 @@
     background-image: url(./../images/homepage/hero-bg-mobile.jpg);
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: cover;
     padding-top: 232px;
     padding-bottom: 152px;
 
+    @media 
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 48em), 
+        only screen and (min-resolution: 192dpi) and (max-width: 48em) {
+        background-image: url(./../images/homepage/hero-bg-mobile@2x.jpg);
+    }
+
+    @media 
+        only screen and (min-width: 48em) {
+        background-image: url(./../images/homepage/hero-bg-tablet.jpg);
+        padding-top: 374px;
+        padding-bottom: 210px;
+    }
+
+    @media 
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 48em), 
+    only screen and (min-resolution: 192dpi) and (min-width: 48em) {
+    background-image: url(./../images/homepage/hero-bg-tablet@2x.jpg);
+    }
+
     &__logo {
         width: 82px;
+
+        @media only screen and (min-width: 48em) {
+            width: 103px;
+        }
     }
 
     .-h1 {
@@ -19,5 +43,9 @@
         margin-bottom: 31px;
         margin-left: -1%;
         margin-right: -1%;
+
+        @media only screen and (min-width: 48em) {
+            margin-bottom: 21px;
+        }
     }
 }
