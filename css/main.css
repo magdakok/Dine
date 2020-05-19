@@ -655,6 +655,14 @@ body {
   padding-bottom: 49px;
 }
 
+@media only screen and (min-width: 48em) {
+  .o-highlights {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    padding-bottom: 46px;
+  }
+}
+
 .o-highlights .-h2 {
   margin-top: 22px;
   margin-bottom: 14px;
@@ -667,13 +675,35 @@ body {
   height: 65px;
 }
 
+@media only screen and (min-width: 48em) {
+  .o-highlights .-h2::before {
+    height: 74px;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .o-highlights .-h2 {
+    width: 70%;
+    margin: 37px auto 14px auto;
+  }
+}
+
 .o-highlights .-h3 {
   margin-top: 29px;
   margin-bottom: 4px;
 }
 
+@media only screen and (min-width: 48em) {
+  .o-highlights .-h3 {
+    margin-top: 6px;
+    margin-bottom: 5px;
+  }
+}
+
 .o-highlights .paragraph {
-  margin-bottom: 65px;
+  margin-bottom: 56px;
+  width: 80%;
+  margin: 0 auto 56px auto;
 }
 
 .o-highlights .-small {
@@ -681,6 +711,18 @@ body {
   line-height: 28px;
   width: 90%;
   margin: 0 auto 24px auto;
+}
+
+@media only screen and (min-width: 48em) {
+  .o-highlights .-small {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.o-highlights .m-highlights__dish {
+  text-align: left;
+  margin-bottom: 44px;
 }
 
 .o-highlights .m-highlights__dish:not(:last-child)::after {
@@ -691,6 +733,32 @@ body {
   background-color: #242b37;
   margin-top: 26px;
   margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 48em) {
+  .o-highlights .m-highlights__dish {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30% 1fr;
+        grid-template-columns: 30% 1fr;
+    -webkit-column-gap: 18px;
+            column-gap: 18px;
+    position: relative;
+  }
+  .o-highlights .m-highlights__dish:not(:last-child)::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: -20px;
+    margin: 0;
+  }
+  .o-highlights .m-highlights__dish .m-highlights__imgBox {
+    width: 100%;
+    text-align: left;
+  }
+  .o-highlights .m-highlights__dish .m-highlights__imgBox img {
+    width: 128px;
+  }
 }
 
 .o-reservation {
