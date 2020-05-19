@@ -58,6 +58,12 @@
         }
     }
 
+    .m-highlights__dishes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .m-highlights__dish {
         text-align: left;
         margin-bottom: 44px;
@@ -75,12 +81,10 @@
 
         @media only screen and (min-width: 48em) {
             display: grid;
-            grid-template-columns: 30% 1fr;
-            
-            column-gap: 18px;
+            grid-template-columns: 160px 383px;
+            column-gap: 33px;
 
             position: relative;
-
             &:not(:last-child)::after {
                 position: absolute;
                 display: block;
@@ -92,7 +96,19 @@
             .m-highlights__imgBox {
                 width: 100%;
                 text-align: left;
-    
+                position: relative;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    height: 1px;
+                    width: 26%;
+                    background-color: $color-brown;
+                    top: 17px;
+                    left: 128px;
+                }
+
                 img {
                     width: 128px;
                 }
