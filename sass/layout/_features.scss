@@ -1,10 +1,25 @@
 .o-features {
+
     @media only screen and (min-width: 48em) {
         padding-left: 0;
         padding-right: 0;
     }
 
     .m-feature {
+        &:last-child .m-feature__imgBox {
+            @media only screen and (min-width: 48em) {
+                &::after {
+                    content: url('./../../images/patterns/pattern-lines.svg');
+                    display: block;
+                    position: absolute;
+                    right: 40px;
+                    bottom: 63px;
+                    width: 160px;
+                    height: 76px;
+                }
+            }
+        }
+        
         &:first-child {
             margin-top: -73px;
             @media only screen and (min-width: 48em) {
@@ -13,6 +28,8 @@
         }
 
         &__imgBox {
+            position: relative;
+
             img {
                 box-shadow: $blured-shadow;
             }

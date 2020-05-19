@@ -580,6 +580,18 @@ body {
   }
 }
 
+@media only screen and (min-width: 48em) {
+  .o-features .m-feature:last-child .m-feature__imgBox::after {
+    content: url("./../../images/patterns/pattern-lines.svg");
+    display: block;
+    position: absolute;
+    right: 40px;
+    bottom: 63px;
+    width: 160px;
+    height: 76px;
+  }
+}
+
 .o-features .m-feature:first-child {
   margin-top: -73px;
 }
@@ -588,6 +600,10 @@ body {
   .o-features .m-feature:first-child {
     margin-top: -97px;
   }
+}
+
+.o-features .m-feature__imgBox {
+  position: relative;
 }
 
 .o-features .m-feature__imgBox img {
