@@ -2,11 +2,21 @@
     padding-top: 81px;
     padding-bottom: 124px;
 
+    @media only screen and (min-width: 48em) {
+        padding-top: 120px;
+        padding-bottom: 119px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
     .m-events__imgBox {
         img {
             box-shadow: $blured-shadow;
             height: 0;
             opacity: 0;
+            @media only screen and (min-width: 48em) {
+                width: 83%;
+            }
         }
 
         .-visible {
@@ -35,6 +45,14 @@
         text-transform: uppercase;
         color: rgba($color-brown-gray, 0.5);
 
+        @media only screen and (min-width: 48em) {
+            margin-top: 5px;
+            margin-bottom: 31px;
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+        }
+
         .m-events__item {
             padding: 11.5px 0;
             cursor: pointer;
@@ -46,6 +64,12 @@
                 width: 48px;
                 margin: 5px auto 0 auto;
                 background-color: transparent;
+            }
+
+            @media only screen and (min-width: 48em) {
+                &::after {
+                    margin: 15px auto 0 auto;
+                }
             }
         }
         
@@ -59,11 +83,20 @@
                 margin: 5px auto 0 auto;
                 background-color: $color-brown;
             }
+            @media only screen and (min-width: 48em) {
+                &::after {
+                    margin: 15px auto 0 auto;
+                }
+            }
         }
     }
 
     .paragraph {
         margin-top: 15px;
         margin-bottom: 31px;
+        @media only screen and (min-width: 48em) {
+                margin: 15px auto 31px auto;
+                width: 67%;
+        }
     }
 }
