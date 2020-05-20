@@ -7,15 +7,33 @@
         padding-bottom: 119px;
         padding-left: 5%;
         padding-right: 5%;
+
+        background-image: url(./../../images/patterns/pattern-curve-top-right.svg);
+        background-repeat: no-repeat;
+        background-position: top left -517px;
     }
 
     .m-events__imgBox {
+        position: relative;
+
+        @media only screen and (min-width: 48em) {
+            
+            &::before {
+                content: url(./../../images/patterns/pattern-lines.svg);
+                display: block;
+                position: absolute;
+                height: 76px;
+                width: 160px;
+                top: -38px;
+            }
+        }
         img {
             box-shadow: $blured-shadow;
             height: 0;
             opacity: 0;
             @media only screen and (min-width: 48em) {
                 width: 83%;
+                
             }
         }
 

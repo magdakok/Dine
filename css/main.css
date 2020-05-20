@@ -456,6 +456,24 @@ body {
     padding-bottom: 119px;
     padding-left: 5%;
     padding-right: 5%;
+    background-image: url(./../../images/patterns/pattern-curve-top-right.svg);
+    background-repeat: no-repeat;
+    background-position: top left -517px;
+  }
+}
+
+.o-events .m-events__imgBox {
+  position: relative;
+}
+
+@media only screen and (min-width: 48em) {
+  .o-events .m-events__imgBox::before {
+    content: url(./../../images/patterns/pattern-lines.svg);
+    display: block;
+    position: absolute;
+    height: 76px;
+    width: 160px;
+    top: -38px;
   }
 }
 
