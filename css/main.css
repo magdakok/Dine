@@ -577,6 +577,10 @@ body {
   .o-features {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 40px;
+    background-image: url(./../../images/patterns/pattern-curve-top-left.svg), url(./../../images/patterns/pattern-curve-top-left.svg);
+    background-repeat: no-repeat;
+    background-position: top 197px left -517px, bottom right -511px;
   }
 }
 
@@ -599,6 +603,9 @@ body {
 @media only screen and (min-width: 48em) {
   .o-features .m-feature:first-child {
     margin-top: -97px;
+  }
+  .o-features .m-feature:first-child .paragraph:first-of-type {
+    margin: 0 auto 120px auto;
   }
 }
 
@@ -637,7 +644,8 @@ body {
 @media only screen and (min-width: 48em) {
   .o-features .paragraph {
     width: 60%;
-    margin: 0 auto 120px auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
