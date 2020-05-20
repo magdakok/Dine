@@ -183,13 +183,54 @@ body {
   padding-bottom: 228px;
 }
 
-.o-booking__logo {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 48em), only screen and (min-resolution: 192dpi) and (max-width: 48em) {
+  .o-booking {
+    background-image: url(./../images/booking/hero-bg-mobile@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .o-booking {
+    background-image: url(./../images/booking/hero-bg-tablet.jpg);
+    background-size: cover;
+    padding-top: 56px;
+    padding-bottom: 302px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 48em), only screen and (min-resolution: 192dpi) and (min-width: 48em) {
+  .o-booking {
+    background-image: url(./../images/booking/hero-bg-tablet@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .o-booking__logoBox {
+    text-align: left;
+  }
+}
+
+.o-booking__logoBox__logo {
   width: 82px;
+}
+
+@media only screen and (min-width: 48em) {
+  .o-booking__logoBox__logo {
+    width: 103px;
+  }
 }
 
 .o-booking .-h1 {
   margin-top: 38px;
   margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 48em) {
+  .o-booking .-h1 {
+    margin-top: 60px;
+  }
 }
 
 .o-booking .paragraph {
@@ -198,9 +239,29 @@ body {
   margin-right: -1%;
 }
 
+@media only screen and (min-width: 48em) {
+  .o-booking .paragraph {
+    padding: 0 10%;
+    margin-bottom: -32px;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .a-btnCta {
+    display: none;
+  }
+}
+
 .o-bookingForm {
   padding-top: 56px;
   padding-bottom: 84px;
+}
+
+@media only screen and (min-width: 48em) {
+  .o-bookingForm {
+    margin-top: -20px;
+    padding: 0 15% 84px 15%;
+  }
 }
 
 .o-bookingForm .form {
@@ -210,6 +271,12 @@ body {
   margin-top: -194px;
   background-color: #FFFFFF;
   font-size: 18px;
+}
+
+@media only screen and (min-width: 48em) {
+  .o-bookingForm .form {
+    margin-top: -230px;
+  }
 }
 
 .o-bookingForm .form__group {
@@ -255,6 +322,23 @@ body {
 
 .o-bookingForm .form__group-time {
   margin-top: 42px;
+}
+
+@media only screen and (min-width: 48em) {
+  .o-bookingForm .form__group-date, .o-bookingForm .form__group-time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .o-bookingForm .form__group-date label, .o-bookingForm .form__group-time label {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    margin-right: auto;
+  }
 }
 
 .o-bookingForm .form .errorColor {
@@ -306,6 +390,14 @@ body {
 .o-bookingForm .form label {
   display: block;
   text-align: left;
+}
+
+@media only screen and (min-width: 48em) {
+  .o-bookingForm .form__dateBox, .o-bookingForm .form__timeBox {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 68%;
+            flex: 0 0 68%;
+  }
 }
 
 .o-bookingForm .form__dateBox {
