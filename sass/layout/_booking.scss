@@ -8,26 +8,26 @@
     padding-bottom: 228px;
 
     @media 
-    only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 48em), 
-    only screen and (min-resolution: 192dpi) and (max-width: 48em) {
-    background-image: url(./../images/booking/hero-bg-mobile@2x.jpg);
-}
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 48em), 
+        only screen and (min-resolution: 192dpi) and (max-width: 48em) {
+        background-image: url(./../images/booking/hero-bg-mobile@2x.jpg);
+    }
 
-@media 
-    only screen and (min-width: 48em) {
-    background-image: url(./../images/booking/hero-bg-tablet.jpg);
-    background-size: cover;
-    padding-top: 56px;
-    padding-bottom: 302px;
-    padding-left: 5%;
-    padding-right: 5%;
-}
+    @media 
+        only screen and (min-width: 48em) {
+        background-image: url(./../images/booking/hero-bg-tablet.jpg);
+        background-size: cover;
+        padding-top: 56px;
+        padding-bottom: 302px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 
-@media 
-only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 48em), 
-only screen and (min-resolution: 192dpi) and (min-width: 48em) {
-background-image: url(./../images/booking/hero-bg-tablet@2x.jpg);
-}
+    @media 
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 48em), 
+        only screen and (min-resolution: 192dpi) and (min-width: 48em) {
+        background-image: url(./../images/booking/hero-bg-tablet@2x.jpg);
+    }
 
 &__logoBox {
     @media only screen and (min-width: 48em) {
@@ -84,7 +84,11 @@ background-image: url(./../images/booking/hero-bg-tablet@2x.jpg);
         font-size: 18px;
 
         @media only screen and (min-width: 48em) {
+            margin-left: auto;
+            margin-right: auto;
             margin-top: -230px;
+            padding: 27px 54px 32px 54px;
+            width: 538px;
         }
 
         &__group {

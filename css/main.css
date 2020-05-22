@@ -275,7 +275,11 @@ body {
 
 @media only screen and (min-width: 48em) {
   .o-bookingForm .form {
+    margin-left: auto;
+    margin-right: auto;
     margin-top: -230px;
+    padding: 27px 54px 32px 54px;
+    width: 538px;
   }
 }
 
