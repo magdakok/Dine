@@ -29,7 +29,7 @@
         background-image: url(./../images/booking/hero-bg-tablet@2x.jpg);
     }
 
-&__logoBox {
+    &__logoBox {
     @media only screen and (min-width: 48em) {
         text-align: left;
     }
@@ -58,11 +58,11 @@
             margin-bottom: -32px;
         }
     }
-}
 
-.a-btnCta {
-    @media only screen and (min-width: 48em) {
-        display: none;
+    .a-btnCta {
+        @media only screen and (min-width: 48em) {
+            display: none;
+        }
     }
 }
 

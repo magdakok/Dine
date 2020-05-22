@@ -247,7 +247,7 @@ body {
 }
 
 @media only screen and (min-width: 48em) {
-  .a-btnCta {
+  .o-booking .a-btnCta {
     display: none;
   }
 }
