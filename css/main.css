@@ -801,7 +801,7 @@ body {
 
 .o-footer {
   background-color: #111111;
-  padding-top: 72px;
+  padding-top: 81px;
   padding-bottom: 81px;
   font-size: 14px;
   line-height: 28px;
@@ -1066,7 +1066,7 @@ body {
 
 .o-reservation {
   padding-top: 82px;
-  padding-bottom: 82px;
+  padding-bottom: 73px;
   background-image: url(./../images/homepage/ready-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1097,7 +1097,7 @@ body {
 }
 
 .o-reservation .-h2 {
-  margin-top: 6px;
+  margin-top: 3px;
   margin-bottom: 20px;
 }
 
