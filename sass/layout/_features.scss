@@ -10,6 +10,11 @@
         background-position: top 197px left -517px, bottom right -511px;
     }
 
+    @media only screen and (min-width: 80em) {
+        padding-right: $padding-desktop;
+        padding-left: $padding-desktop;
+    }
+
     .m-feature {
         &:last-child .m-feature__imgBox {
             @media only screen and (min-width: 48em) {
@@ -27,6 +32,11 @@
                 }
             }
         }
+
+        @media only screen and (min-width: 80em) {
+            display: flex;
+            flex-direction: row-reverse;
+        }
         
         &:first-child {
             margin-top: -73px;
@@ -39,6 +49,21 @@
                     }
                 }
             }
+
+            @media only screen and (min-width: 80em) {
+                margin-top: -72px;
+
+                .paragraph {
+                    &:first-of-type {
+                        margin: 0;
+                    }
+                }
+
+                .m-feature__imgBox {
+                    order: 1;
+                }
+            }
+
         }
 
         &__imgBox {
@@ -51,6 +76,14 @@
 
             img {
                 box-shadow: $blured-shadow;
+            }
+        }
+
+        &__textBox {
+            @media only screen and (min-width: 80em) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
         }
     }
@@ -70,6 +103,11 @@
             width: 50%;
             margin: 27px auto 14px auto;
         }
+
+        @media only screen and (min-width: 80em) {
+            margin: 240px 0 16px 0;
+            width: 67%;
+        }
     }
 
     .paragraph {
@@ -79,6 +117,10 @@
             width: 60%;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        @media only screen and (min-width: 80em) {
+            margin: 0;
         }
     }
 }

@@ -720,6 +720,13 @@ body {
   }
 }
 
+@media only screen and (min-width: 80em) {
+  .o-features {
+    padding-right: 11.6%;
+    padding-left: 11.6%;
+  }
+}
+
 @media only screen and (min-width: 48em) {
   .o-features .m-feature:last-child .m-feature__imgBox::after {
     content: url("./../../images/patterns/pattern-lines.svg");
@@ -738,6 +745,18 @@ body {
   }
 }
 
+@media only screen and (min-width: 80em) {
+  .o-features .m-feature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
 .o-features .m-feature:first-child {
   margin-top: -73px;
 }
@@ -748,6 +767,20 @@ body {
   }
   .o-features .m-feature:first-child .paragraph:first-of-type {
     margin: 0 auto 120px auto;
+  }
+}
+
+@media only screen and (min-width: 80em) {
+  .o-features .m-feature:first-child {
+    margin-top: -72px;
+  }
+  .o-features .m-feature:first-child .paragraph:first-of-type {
+    margin: 0;
+  }
+  .o-features .m-feature:first-child .m-feature__imgBox {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 
@@ -766,6 +799,21 @@ body {
 .o-features .m-feature__imgBox img {
   -webkit-box-shadow: 0px 49px 79px 0px rgba(112, 112, 112, 0.8);
           box-shadow: 0px 49px 79px 0px rgba(112, 112, 112, 0.8);
+}
+
+@media only screen and (min-width: 80em) {
+  .o-features .m-feature__textBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .o-features .-h2 {
@@ -787,6 +835,13 @@ body {
   }
 }
 
+@media only screen and (min-width: 80em) {
+  .o-features .-h2 {
+    margin: 240px 0 16px 0;
+    width: 67%;
+  }
+}
+
 .o-features .paragraph {
   margin-bottom: 80px;
 }
@@ -796,6 +851,12 @@ body {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 80em) {
+  .o-features .paragraph {
+    margin: 0;
   }
 }
 
