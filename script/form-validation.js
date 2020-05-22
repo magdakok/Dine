@@ -69,7 +69,7 @@ function correctEmail() {
 
 function correctDate () {
     dateValidation.forEach(el => {
-        if (el.element.value === '') {
+        if (el.element.value === '' || el.element.value < el.minVal || el.element.value > el.maxVal) {
             el.element.classList.add('errorColor');
             printError(el.element.parentElement, 'This field is incomplete', true);
             addFocusoutCheck(el.element,correctDate);
@@ -85,7 +85,7 @@ function correctDate () {
 
 function correctTime () {
     timeValidation.forEach(el => {
-        if (el.element.value === '') {
+        if (el.element.value === '' || el.element.value < el.minVal || el.element.value > el.maxVal) {
             el.element.classList.add('errorColor');
             printError(el.element.parentElement, 'This field is incomplete', true);
             addFocusoutCheck(el.element,correctTime);
