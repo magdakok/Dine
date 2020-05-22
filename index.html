@@ -20,10 +20,21 @@
   <section class="o-features">
       <div class="m-feature">
         <div class="m-feature__imgBox">
-          <img srcset="./images/homepage/enjoyable-place-mobile.jpg 1x, 
-          ./images/homepage/enjoyable-place-mobile@2x.jpg 2x"
-          alt="Sheep pasture on a meadow"
-          src="./images/homepage/enjoyable-place-mobile.jpg">
+          <picture class="img">
+            <source 
+            srcset="./images/homepage/enjoyable-place-mobile.jpg 1x, 
+            ./images/homepage/enjoyable-place-mobile@2x.jpg 2x,"
+            media="(max-width: 48em)">
+            <source 
+            srcset="./images/homepage/enjoyable-place-tablet.jpg 1x, 
+            ./images/homepage/enjoyable-place-tablet@2x.jpg 2x,"
+            media="(min-width: 48em) and (max-width: 80em)">
+            <source 
+            srcset="./images/homepage/enjoyable-place-desktop.jpg 1x, 
+            ./images/homepage/enjoyable-place-desktop@2x.jpg 2x,"
+            media="(min-width: 80em)">
+            <img src="./images/homepage/enjoyable-place-desktop.jpg" alt="Sheep pasture on a meadow">
+          </picture>
         </div>
         <div class="m-feature__textBox">
           <h2 class="heading -h2 -black">Enjoyable place for all the family</h2>
@@ -33,16 +44,21 @@
 
       <div class="m-feature">
         <div class="m-feature__imgBox">
-          <img srcset="./images/homepage/locally-sourced-mobile.jpg 327w, 
-          ./images/homepage/locally-sourced-mobile@2x.jpg 654w, 
-          ./images/homepage/locally-sourced-tablet.jpg 573w,
-          ./images/homepage/locally-sourced-tablet@2x.jpg 1146w,
-          ./images/homepage/locally-sourced-desktop.jpg 540w,
-          ./images/homepage/locally-sourced-desktop@2x.jpg 1080w" 
-          sizes="(min-width: 48em) 75vw,
-          327px"
-          alt="A hand pouring sauce on a dish"
-          src="./images/homepage/locally-sourced-mobile.jpg">
+          <picture class="img">
+            <source 
+            srcset="./images/homepage/locally-sourced-mobile.jpg 1x, 
+            ./images/homepage/locally-sourced-mobile@2x.jpg 2x,"
+            media="(max-width: 48em)">
+            <source 
+            srcset="./images/homepage/locally-sourced-tablet.jpg 1x, 
+            ./images/homepage/locally-sourced-tablet@2x.jpg 2x,"
+            media="(min-width: 48em) and (max-width: 80em)">
+            <source 
+            srcset="./images/homepage/locally-sourced-desktop.jpg 1x, 
+            ./images/homepage/locally-sourced-desktop@2x.jpg 2x,"
+            media="(min-width: 80em)">
+            <img src="./images/homepage/locally-sourced-desktop.jpg" alt="A hand pouring sauce on a dish">
+          </picture>
         </div>
         <div class="m-feature__textBox">
           <h2 class="heading -h2 -black">The most locally sourced food</h2>
@@ -60,7 +76,17 @@
 
       <li class="m-highlights__dish">
         <div class="m-highlights__imgBox">
+          <picture class="img">
+            <source 
+            srcset="./images/homepage/salmon-mobile.jpg 1x, 
+            ./images/homepage/salmon-mobile@2x.jpg 2x,"
+            media="(max-width: 48em)">
+            <source 
+            srcset="./images/homepage/salmon-desktop-tablet.jpg 1x, 
+            ./images/homepage/salmon-desktop-tablet@2x.jpg 2x,"
+            media="(min-width: 48em)">
             <img src="./images/homepage/salmon-mobile.jpg" alt="Fried salmon on a plate">
+          </picture>
         </div>
         <div class="m-highlights__textBox">
           <h2 class="heading -h3 -white">Seared Salmon Fillet</h2>
@@ -70,7 +96,17 @@
 
       <li class="m-highlights__dish">
         <div class="m-highlights__imgBox">
-          <img src="./images/homepage/beef-mobile.jpg" alt="Beef steak">
+          <picture class="img">
+            <source 
+            srcset="./images/homepage/beef-mobile.jpg 1x, 
+            ./images/homepage/beef-mobile@2x.jpg 2x,"
+            media="(max-width: 48em)">
+            <source 
+            srcset="./images/homepage/beef-desktop-tablet.jpg 1x, 
+            ./images/homepage/beef-desktop-tablet@2x.jpg 2x,"
+            media="(min-width: 48em)">
+            <img src="./images/homepage/beef-mobile.jpg" alt="Beef steak">
+          </picture>
         </div>
         <div class="m-highlights__textBox">
           <h2 class="heading -h3 -white">Rosemary Filet Mignon</h2>
@@ -80,7 +116,17 @@
 
       <li class="m-highlights__dish">
         <div class="m-highlights__imgBox">
-          <img src="./images/homepage/chocolate-mobile.jpg" alt="Chocolate dessert">
+          <picture class="img">
+            <source 
+            srcset="./images/homepage/chocolate-mobile.jpg 1x, 
+            ./images/homepage/chocolate-mobile@2x.jpg 2x,"
+            media="(max-width: 48em)">
+            <source 
+            srcset="./images/homepage/chocolate-desktop-tablet.jpg 1x, 
+            ./images/homepage/chocolate-desktop-tablet@2x.jpg 2x,"
+            media="(min-width: 48em)">
+            <img src="./images/homepage/chocolate-mobile.jpg" alt="Chocolate dessert">
+          </picture>
         </div>
         <div class="m-highlights__textBox">
           <h2 class="heading -h3 -white">Summer Fruit Chocolate Mousse</h2>
@@ -91,48 +137,56 @@
   </section>
 
   <section class="o-events">
-    <div class="m-events__imgBox"> 
-      <img srcset="./images/homepage/family-gathering-mobile.jpg 326w, 
-      ./images/homepage/family-gathering-mobile@2x.jpg 652w, 
-      ./images/homepage/family-gathering-tablet.jpg 573w,
-      ./images/homepage/family-gathering-tablet@2x.jpg 1146w,
-      ./images/homepage/family-gathering-desktop.jpg 540w,
-      ./images/homepage/family-gathering-desktop@2x.jpg 1080w" 
-      sizes="
-      (max-width: 48em) 87vw,
-      (min-width: 48em) 75vw,
-      326px"
-      class="m-event__img -visible" id="familyGatheringImg"
-      alt="Family members grabbing food from the table"
-      src="./images/homepage/family-gathering-mobile.jpg">
+    <div class="m-events__imgBox">
 
-      <img srcset="./images/homepage/family-gathering-mobile.jpg 326w, 
-      ./images/homepage/special-events-mobile@2x.jpg 652w, 
-      ./images/homepage/special-events-tablet.jpg 573w,
-      ./images/homepage/special-events-tablet@2x.jpg 1146w,
-      ./images/homepage/special-events-desktop.jpg 540w,
-      ./images/homepage/special-events-desktop@2x.jpg 1080w" 
-      sizes="
-      (max-width: 48em) 87vw,
-      (min-width: 48em) 75vw,
-      326px"
-      class="m-event__img" id="specialEventsImg"
-      alt="Smiling family sitting by the table raising their drinks"
-      src="./images/homepage/special-events-mobile.jpg">
+      <picture class="img">
+        <source 
+        srcset="./images/homepage/family-gathering-mobile.jpg 1x, 
+        ./images/homepage/family-gathering-mobile@2x.jpg 2x,"
+        media="(max-width: 48em)">
+        <source 
+        srcset="./images/homepage/family-gathering-tablet.jpg 1x, 
+        ./images/homepage/family-gathering-tablet@2x.jpg 2x,"
+        media="(min-width: 48em) and (max-width: 80em)">
+        <source 
+        srcset="./images/homepage/family-gathering-desktop.jpg 1x, 
+        ./images/homepage/family-gathering-desktop@2x.jpg 2x,"
+        media="(min-width: 80em)">
+        <img src="./images/homepage/family-gathering-desktop.jpg" alt="Family members grabbing food from the table" class="m-event__img -visible" id="familyGatheringImg">
+      </picture>
 
-      <img srcset="./images/homepage/family-gathering-mobile.jpg 326w, 
-      ./images/homepage/social-events-mobile@2x.jpg 652w, 
-      ./images/homepage/social-events-tablet.jpg 573w,
-      ./images/homepage/social-events-tablet@2x.jpg 1146w,
-      ./images/homepage/social-events-desktop.jpg 540w,
-      ./images/homepage/social-events-desktop@2x.jpg 1080w" 
-      sizes="
-      (max-width: 48em) 87vw,
-      (min-width: 48em) 75vw,
-      326px"
-      class="m-event__img" id="socialEventsImg"
-      alt="Wine glasses on the table surrounded by people"
-      src="./images/homepage/social-events-mobile.jpg">
+      <picture class="img">
+        <source 
+        srcset="./images/homepage/special-events-mobile.jpg 1x, 
+        ./images/homepage/special-events-mobile@2x.jpg 2x,"
+        media="(max-width: 48em)">
+        <source 
+        srcset="./images/homepage/special-events-tablet.jpg 1x, 
+        ./images/homepage/special-events-tablet@2x.jpg 2x,"
+        media="(min-width: 48em) and (max-width: 80em)">
+        <source 
+        srcset="./images/homepage/special-events-desktop.jpg 1x, 
+        ./images/homepage/special-events-desktop@2x.jpg 2x,"
+        media="(min-width: 80em)">
+        <img src="./images/homepage/special-events-desktop.jpg" alt="Smiling family sitting by the table raising their drinks" class="m-event__img" id="specialEventsImg">
+      </picture>
+
+      <picture class="img">
+        <source 
+        srcset="./images/homepage/social-events-mobile.jpg 1x, 
+        ./images/homepage/social-events-mobile@2x.jpg 2x,"
+        media="(max-width: 48em)">
+        <source 
+        srcset="./images/homepage/social-events-tablet.jpg 1x, 
+        ./images/homepage/social-events-tablet@2x.jpg 2x,"
+        media="(min-width: 48em) and (max-width: 80em)">
+        <source 
+        srcset="./images/homepage/social-events-desktop.jpg 1x, 
+        ./images/homepage/social-events-desktop@2x.jpg 2x,"
+        media="(min-width: 80em)">
+        <img src="./images/homepage/social-events-desktop.jpg" alt="Wine glasses on the table surrounded by people" class="m-event__img" id="socialEventsImg">
+      </picture>
+
     </div>
     <div class="m-events__box">
       <div class="m-events__textBox">
