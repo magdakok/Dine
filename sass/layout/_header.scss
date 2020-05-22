@@ -16,14 +16,27 @@
     @media 
         only screen and (min-width: 48em) {
         background-image: url(./../images/homepage/hero-bg-tablet.jpg);
-        padding-top: 374px;
+        padding-top: 48.7%;
         padding-bottom: 210px;
     }
 
     @media 
-    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 48em), 
-    only screen and (min-resolution: 192dpi) and (min-width: 48em) {
-    background-image: url(./../images/homepage/hero-bg-tablet@2x.jpg);
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 48em), 
+        only screen and (min-resolution: 192dpi) and (min-width: 48em) {
+        background-image: url(./../images/homepage/hero-bg-tablet@2x.jpg);
+    }
+
+    @media 
+        only screen and (min-width: 80em) {
+        background-image: url(./../images/homepage/hero-bg-desktop.jpg);
+        padding-top: 65px;
+        padding-bottom: 210px;
+    }
+
+    @media 
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 80em), 
+        only screen and (min-resolution: 192dpi) and (min-width: 80em) {
+        background-image: url(./../images/homepage/hero-bg-desktop@2x.jpg);
     }
 
     &__logo {

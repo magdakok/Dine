@@ -8,6 +8,20 @@ body > * {
         padding-left: $padding-tablet;
         padding-right: $padding-tablet;
     }
+
+    @media only screen and (min-width: 80em) {
+        text-align: left;
+        padding-left: $padding-desktop;
+        padding-right: $padding-desktop;
+    }
+
+    //TO REMOVE OR CHANGE -> JUST TO HAVE A BREAKPOINT IN CHROME WEB DEV TOOLS v
+    @media only screen and (min-width: 90em) {
+        text-align: left;
+        padding-left: $padding-desktop;
+        padding-right: $padding-desktop;
+    }
+    
 }
 
 img {

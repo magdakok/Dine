@@ -21,6 +21,9 @@
                     bottom: 63px;
                     width: 160px;
                     height: 76px;
+                    @media only screen and (min-width: 55em) {
+                        right: -25px;
+                    }
                 }
             }
         }
@@ -40,6 +43,11 @@
 
         &__imgBox {
             position: relative;
+            @media only screen and (min-width: 55em) {
+                width: 655px;
+                margin-right: auto;
+                margin-left: auto;
+            }
 
             img {
                 box-shadow: $blured-shadow;

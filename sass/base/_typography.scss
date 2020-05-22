@@ -17,6 +17,10 @@ body {
         font-size: 48px;
         line-height: 64px;
     }
+    @media only screen and (min-width: 80em) {
+        font-size: 64px;
+        line-height: 72px;
+    }
 }
 
 .-h2 {
