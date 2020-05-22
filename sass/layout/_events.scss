@@ -15,13 +15,10 @@
 
     .m-events__imgBox {
         position: relative;
+        margin-right: auto;
+        margin-left: auto;
 
         @media only screen and (min-width: 48em) {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-
             &::before {
                 content: url(./../../images/patterns/pattern-lines.svg);
                 display: block;
@@ -35,23 +32,21 @@
 
         @media only screen and (min-width: 55em) {
             width: 655px;
-            margin-right: auto;
-            margin-left: auto;
         }
 
         img {
             box-shadow: $blured-shadow;
-            height: 0;
-            opacity: 0;
+            display: none;
+            margin-right: auto;
+            margin-left: auto;
+            
             @media only screen and (min-width: 48em) {
                 width: 83%;
             }
         }
 
         .-visible {
-            visibility: visible;
-            height: auto;
-            opacity: 1;        
+            display: block;      
         }
     }
  
@@ -64,7 +59,7 @@
 
     .m-events__nav {
         order: -1;
-        margin-top: 22px;
+        margin-top: 45px;
         margin-bottom: 18px;
 
         font-size: 14px;
