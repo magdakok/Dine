@@ -41,8 +41,12 @@
 
     .paragraph {
         margin-bottom: 56px;
-        width: 80%;
-        margin: 0 auto 56px auto;
+        width: 101%;
+        margin: 0 auto 65px auto;
+        @media only screen and (min-width: 48em) {
+            width: 80%;
+            margin: 0 auto 56px auto;
+        }
     }
 
     .-small {
@@ -68,7 +72,7 @@
 
     .m-highlights__dish {
         text-align: center;
-        margin-bottom: 44px;
+        margin-bottom: 24px;
 
         &:not(:last-child)::after {
             content: '';
@@ -86,6 +90,7 @@
             display: grid;
             grid-template-columns: 160px 383px;
             column-gap: 33px;
+            margin-bottom: 44px;
 
             position: relative;
             &:not(:last-child)::after {

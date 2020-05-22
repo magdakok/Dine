@@ -560,6 +560,19 @@ body {
 
 .o-events .m-events__imgBox {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 @media only screen and (min-width: 48em) {
@@ -570,6 +583,7 @@ body {
     height: 76px;
     width: 160px;
     top: -38px;
+    left: 0;
   }
 }
 
@@ -624,7 +638,7 @@ body {
 
 @media only screen and (min-width: 48em) {
   .o-events .m-events__nav {
-    margin-top: 5px;
+    margin-top: 52px;
     margin-bottom: 31px;
     width: 95%;
     display: -webkit-box;
@@ -765,7 +779,7 @@ body {
 
 .o-footer {
   background-color: #111111;
-  padding-top: 80px;
+  padding-top: 72px;
   padding-bottom: 81px;
   font-size: 14px;
   line-height: 28px;
@@ -817,7 +831,7 @@ body {
   background-position: top center;
   background-size: cover;
   padding-top: 232px;
-  padding-bottom: 152px;
+  padding-bottom: 147px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 48em), only screen and (min-resolution: 192dpi) and (max-width: 48em) {
@@ -920,8 +934,15 @@ body {
 
 .o-highlights .paragraph {
   margin-bottom: 56px;
-  width: 80%;
-  margin: 0 auto 56px auto;
+  width: 101%;
+  margin: 0 auto 65px auto;
+}
+
+@media only screen and (min-width: 48em) {
+  .o-highlights .paragraph {
+    width: 80%;
+    margin: 0 auto 56px auto;
+  }
 }
 
 .o-highlights .-small {
@@ -955,7 +976,7 @@ body {
 
 .o-highlights .m-highlights__dish {
   text-align: center;
-  margin-bottom: 44px;
+  margin-bottom: 24px;
 }
 
 .o-highlights .m-highlights__dish:not(:last-child)::after {
@@ -977,6 +998,7 @@ body {
         grid-template-columns: 160px 383px;
     -webkit-column-gap: 33px;
             column-gap: 33px;
+    margin-bottom: 44px;
     position: relative;
   }
   .o-highlights .m-highlights__dish:not(:last-child)::after {
