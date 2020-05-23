@@ -1030,7 +1030,7 @@ body {
 @media only screen and (min-width: 80em) {
   .o-highlights {
     margin-top: -125px;
-    padding-top: 254px;
+    padding-top: 256px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
