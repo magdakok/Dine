@@ -710,6 +710,7 @@ body {
 .o-events .m-events__nav .m-events__item {
   padding: 11.5px 0;
   cursor: pointer;
+  position: relative;
 }
 
 .o-events .m-events__nav .m-events__item::after {
@@ -729,7 +730,14 @@ body {
 
 @media only screen and (min-width: 80em) {
   .o-events .m-events__nav .m-events__item {
-    padding: 5px 0;
+    padding: 0 0 28px 0;
+  }
+  .o-events .m-events__nav .m-events__item::after {
+    margin: 0;
+    position: absolute;
+    left: -125px;
+    top: 9px;
+    width: 91px;
   }
 }
 
@@ -749,6 +757,16 @@ body {
 @media only screen and (min-width: 48em) {
   .o-events .m-events__nav .-active::after {
     margin: 15px auto 0 auto;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .o-events .m-events__nav .-active::after {
+    margin: 0;
+    position: absolute;
+    left: -125px;
+    top: 9px;
+    width: 91px;
   }
 }
 

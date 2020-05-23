@@ -111,6 +111,7 @@
         .m-events__item {
             padding: 11.5px 0;
             cursor: pointer;
+            position: relative;
 
             &::after {
                 content: '';
@@ -127,7 +128,15 @@
                 }
             }
             @media only screen and (min-width: 80em) {
-                padding: 5px 0;
+                padding: 0 0 28px 0;
+
+                &::after {
+                    margin: 0;
+                    position: absolute;
+                    left: -125px;
+                    top: 9px;
+                    width: 91px;
+                }
             } 
         }
         
@@ -144,6 +153,15 @@
             @media only screen and (min-width: 48em) {
                 &::after {
                     margin: 15px auto 0 auto;
+                }
+            }
+            @media only screen and (min-width: 48em) {
+                &::after {
+                    margin: 0;
+                    position: absolute;
+                    left: -125px;
+                    top: 9px;
+                    width: 91px;
                 }
             }
         }
