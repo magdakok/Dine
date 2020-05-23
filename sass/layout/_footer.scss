@@ -20,6 +20,12 @@
         align-items: start;
         row-gap: 37px;
     }
+    @media only screen and (min-width: 80em) {
+        grid-template-columns: 26.5% 33% 41.5%;
+        grid-template-rows: min-content;
+        grid-auto-flow: dense;
+        padding: 79px $padding-desktop;
+    }
 
     .m-footer__address {
         margin-top: 31px;
@@ -31,6 +37,9 @@
     .m-footer__openTimes {
         @media only screen and (min-width: 48em) {
             grid-column: 2/3;
+        }
+        @media only screen and (min-width: 80em) {
+            grid-column: 3/4;
         }
     }
 }
