@@ -68,6 +68,12 @@ body {
   }
 }
 
+@media only screen and (min-width: 80em) {
+  .-h2 {
+    letter-spacing: -0.5px;
+  }
+}
+
 .-h3 {
   font-size: 18px;
   font-weight: 700;
@@ -1332,6 +1338,7 @@ body {
 @media only screen and (min-width: 48em) {
   .o-reservation {
     background-image: url(./../images/homepage/ready-bg-tablet.jpg);
+    padding: 60px 7.5%;
   }
 }
 
@@ -1341,15 +1348,34 @@ body {
   }
 }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 80em) {
   .o-reservation {
-    padding: 60px 7.5%;
+    background-image: url(./../images/homepage/ready-bg-desktop.jpg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 91px 11.5% 84px 11.5%;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 80em), only screen and (min-resolution: 192dpi) and (min-width: 80em) {
+  .o-reservation {
+    background-image: url(./../images/homepage/ready-bg-desktop@2x.jpg);
   }
 }
 
 .o-reservation .-h2 {
   margin-top: 3px;
   margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 80em) {
+  .o-reservation .-h2 {
+    margin: 0;
+  }
 }
 
 body > * {

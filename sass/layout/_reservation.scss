@@ -15,6 +15,7 @@
     @media 
     only screen and (min-width: 48em) {
         background-image: url(./../images/homepage/ready-bg-tablet.jpg);
+        padding: 60px 7.5%;
     }
 
     @media 
@@ -23,12 +24,24 @@
         background-image: url(./../images/homepage/ready-bg-tablet@2x.jpg);
     }
 
-    @media only screen and (min-width: 48em) {
-        padding: 60px 7.5%;
+    @media only screen and (min-width: 80em) {
+        background-image: url(./../images/homepage/ready-bg-desktop.jpg);
+        display: flex;
+        justify-content: space-between;
+        padding: 91px 11.5% 84px 11.5%;
+    }
+
+    @media 
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 80em),
+    only screen and (min-resolution: 192dpi) and (min-width: 80em) {
+        background-image: url(./../images/homepage/ready-bg-desktop@2x.jpg);
     }
 
     .-h2 {
         margin-top: 3px;
         margin-bottom: 20px;
+        @media only screen and (min-width: 80em) {
+            margin: 0;
+        }
     }
 }
