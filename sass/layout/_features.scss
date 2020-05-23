@@ -16,56 +16,12 @@
     }
 
     .m-feature {
-        &:last-child .m-feature__imgBox {
-            @media only screen and (min-width: 48em) {
-                &::after {
-                    content: url('./../../images/patterns/pattern-lines.svg');
-                    display: block;
-                    position: absolute;
-                    right: 40px;
-                    bottom: 63px;
-                    width: 160px;
-                    height: 76px;
-                    @media only screen and (min-width: 55em) {
-                        right: -25px;
-                    }
-                }
-            }
-        }
-
         @media only screen and (min-width: 80em) {
             display: flex;
             flex-direction: row-reverse;
+            margin-top: 116px;
         }
         
-        &:first-child {
-            margin-top: -73px;
-            @media only screen and (min-width: 48em) {
-                margin-top: -97px;
-
-                .paragraph {
-                    &:first-of-type {
-                        margin: 0 auto 120px auto;
-                    }
-                }
-            }
-
-            @media only screen and (min-width: 80em) {
-                margin-top: -72px;
-
-                .paragraph {
-                    &:first-of-type {
-                        margin: 0;
-                    }
-                }
-
-                .m-feature__imgBox {
-                    order: 1;
-                }
-            }
-
-        }
-
         &__imgBox {
             position: relative;
             @media only screen and (min-width: 55em) {
@@ -80,47 +36,103 @@
         }
 
         &__textBox {
+            .-h2 {
+                margin-top: 22px;
+                margin-bottom: 14px;
+
+                @media only screen and (min-width: 48em) {
+                    width: 50%;
+                    margin: 27px auto 14px auto;
+                }
+        
+                @media only screen and (min-width: 80em) {
+                    margin: 171px 0 16px 0;
+                    width: 85%;
+                }
+        
+                &::before {
+                    content: url(../../images/patterns/pattern-divide.svg);
+                    display: block;
+                    width: 100%;
+                    height: 65px;
+                    @media only screen and (min-width: 80em) {
+                        height: 87px;
+                    }
+                }
+            }
+        
+            .paragraph {
+                margin-bottom: 80px; //goes perfectly as bottom margin of the section
+                
+                @media only screen and (min-width: 48em) {
+                    width: 60%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+        
+                @media only screen and (min-width: 80em) {
+                    margin: 0;
+                    width: 80%;
+                }
+            }
+            
             @media only screen and (min-width: 80em) {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
             }
         }
-    }
 
-    .-h2 {
-        margin-top: 22px;
-        margin-bottom: 14px;
-
-        &::before {
-            content: url(../../images/patterns/pattern-divide.svg);
-            display: block;
-            width: 100%;
-            height: 65px;
+        &:last-child .m-feature__imgBox {
+            @media only screen and (min-width: 48em) {
+                &::after {
+                    content: url('./../../images/patterns/pattern-lines.svg');
+                    display: block;
+                    position: absolute;
+                    right: 40px;
+                    bottom: 63px;
+                    width: 160px;
+                    height: 76px;
+                    @media only screen and (min-width: 55em) {
+                        right: -25px;
+                    }
+                    @media only screen and (min-width: 80em) {
+                        right: -116px;
+                        top: 282px;
+                    }
+                }
+            }
         }
 
-        @media only screen and (min-width: 48em) {
-            width: 50%;
-            margin: 27px auto 14px auto;
-        }
+        &:first-child {
+            margin-top: -73px;
+            @media only screen and (min-width: 48em) {
+                margin-top: -97px;
 
-        @media only screen and (min-width: 80em) {
-            margin: 240px 0 16px 0;
-            width: 67%;
-        }
-    }
+                .paragraph {
+                    &:first-of-type {
+                        margin: 0 auto 120px auto;
+                    }
+                }
+            }
 
-    .paragraph {
-        margin-bottom: 80px; //goes perfectly as bottom margin of the section
-        
-        @media only screen and (min-width: 48em) {
-            width: 60%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        @media only screen and (min-width: 80em) {
-            margin: 0;
+            @media only screen and (min-width: 80em) {
+                margin-top: -72px;
+                .m-feature__textBox {
+                    padding-left: 122px;
+                    .-h2 {
+                        margin: 217px 0 16px 0;
+                    }
+                    .paragraph {
+                        &:first-of-type {
+                            margin: 0;
+                            width: 100%;
+                        }
+                    }
+                }
+                .m-feature__imgBox {
+                    order: 1;
+                }
+            }
         }
     }
 }
