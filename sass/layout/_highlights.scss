@@ -8,10 +8,16 @@
         padding-right: 12.5%;
         padding-bottom: 46px;
     }
+    @media only screen and (min-width: 80em) {
+        margin-top: -125px;
+        padding-top: 254px;
+        display: flex;
+    }
 
     .-h2 {
         margin-top: 22px;
         margin-bottom: 14px;
+        position: relative;
 
         &::before {
             content: url(../../images/patterns/pattern-divide.svg);
@@ -21,11 +27,21 @@
             @media only screen and (min-width: 48em) {
                 height: 74px;
             }
+            @media only screen and (min-width: 80em) {
+                position: absolute;
+                top: -87px;
+            }
         }
 
         @media only screen and (min-width: 48em) {
             width: 70%;
             margin: 37px auto 14px auto;
+        }
+        @media only screen and (min-width: 80em) {
+            margin: 0;
+            margin-bottom: 20px;
+            width: 85%;
+            display: flex;
         }
     }
 
@@ -47,6 +63,10 @@
             width: 80%;
             margin: 0 auto 56px auto;
         }
+        @media only screen and (min-width: 80em) {
+            margin: 0;
+            width: 89%;
+        }
     }
 
     .-small {
@@ -62,11 +82,21 @@
         }
     }
 
+    .m-highlights__textBox{
+        @media only screen and (min-width: 80em) {
+            margin-left: -15px;
+            flex: 0 0 50%;
+        }
+    }
+
     .m-highlights__dishes {
         @media only screen and (min-width: 48em) {
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+        @media only screen and (min-width: 80em) {
+            margin-left: 30px;
         }
     }
 
@@ -121,6 +151,10 @@
                     width: 128px;
                 }
             }
+        }
+        @media only screen and (min-width: 80em) {
+            column-gap: 44px;
+            grid-template-columns: 160px 340px;
         }
     }
 }
