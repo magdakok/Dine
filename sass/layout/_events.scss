@@ -12,6 +12,10 @@
         background-repeat: no-repeat;
         background-position: top left -517px;
     }
+    @media only screen and (min-width: 80em) {
+        padding: 161px $padding-desktop;
+        display: flex;
+    }
 
     .m-events__imgBox {
         position: relative;
@@ -33,6 +37,14 @@
         @media only screen and (min-width: 55em) {
             width: 655px;
         }
+        @media only screen and (min-width: 80em) {
+            flex: 0 0 48.7%;
+
+            &::before {
+                top: -39px;
+                left: -41px;
+            }
+        }
 
         img {
             box-shadow: $blured-shadow;
@@ -42,6 +54,9 @@
             
             @media only screen and (min-width: 48em) {
                 width: 83%;
+            }
+            @media only screen and (min-width: 80em) {
+                width: 100%;
             }
         }
 
@@ -55,6 +70,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        @media only screen and (min-width: 80em) {
+            margin-left: 124px;
+            justify-content: flex-start;
+        }
     }
 
     .m-events__nav {
@@ -81,6 +101,13 @@
             justify-content: space-around;
         }
 
+        @media only screen and (min-width: 80em) {
+            flex-direction: column;
+            order: 2;
+
+            margin-left: -22px;
+        }
+
         .m-events__item {
             padding: 11.5px 0;
             cursor: pointer;
@@ -99,6 +126,9 @@
                     margin: 15px auto 0 auto;
                 }
             }
+            @media only screen and (min-width: 80em) {
+                padding: 5px 0;
+            } 
         }
         
         .-active {
@@ -119,6 +149,12 @@
         }
     }
 
+    .-h2 {
+        @media only screen and (min-width: 80em) {
+            margin-top: 65px;
+        } 
+    }
+
     .paragraph {
         margin-top: 15px;
         margin-bottom: 31px;
@@ -126,5 +162,16 @@
                 margin: 15px auto 31px auto;
                 width: 67%;
         }
+        @media only screen and (min-width: 80em) {
+            margin: 15px 0 30px 0;
+            width: 100%;
+        }
+    }
+
+    .a-btnCta {
+        @media only screen and (min-width: 80em) {
+            margin-bottom: 30px;
+            align-self: flex-start;
+        } 
     }
 }
