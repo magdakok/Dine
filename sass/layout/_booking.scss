@@ -44,6 +44,12 @@
         background-image: url(./../images/booking/hero-bg-desktop@2x.jpg);
     }
 
+    @media 
+        only screen and (min-width: 100em) {
+        padding-left: $padding-big-desktop;
+        padding-right: $padding-big-desktop;
+    }
+
     &__logoBox {
     @media only screen and (min-width: 48em) {
         text-align: left;
@@ -81,6 +87,10 @@
             margin: 0;
             padding: 0;
             width: 100%;
+        }
+
+        @media only screen and (min-width: 100em) {
+        width: 50%;
         }
     }
 
