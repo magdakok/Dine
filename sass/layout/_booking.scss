@@ -113,7 +113,7 @@
         margin: 0;
         padding: 0;
         height: 320px;
-        background-image: url(../../images/patterns/pattern-curve-bottom-right.svg);
+        background-image: url(./../images/patterns/pattern-curve-bottom-right.svg);
         background-repeat: no-repeat;
         background-position: bottom left;
     }
@@ -141,7 +141,7 @@
             right: 11.5%;
 
             &::after {
-                content: url('../../images/patterns/pattern-lines.svg');
+                content: url('./../images/patterns/pattern-lines.svg');
                     display: block;
                     position: absolute;
                     left: -82px;

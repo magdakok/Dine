@@ -5,13 +5,13 @@
         padding-right: 0;
         padding-bottom: 40px;
 
-        background-image: url(./../../images/patterns/pattern-curve-top-left.svg), url(./../../images/patterns/pattern-curve-top-left.svg);
+        background-image: url(./../images/patterns/pattern-curve-top-left.svg), url(./../images/patterns/pattern-curve-top-left.svg);
         background-repeat: no-repeat;
         background-position: top 197px left -517px, bottom right -511px;
     }
 
     @media only screen and (min-width: 80em) {
-        background-image: url(./../../images/patterns/pattern-curve-top-right.svg), url(./../../images/patterns/pattern-curve-top-left.svg);
+        background-image: url(./../images/patterns/pattern-curve-top-right.svg), url(./../images/patterns/pattern-curve-top-left.svg);
         background-repeat: no-repeat;
         background-position: top 322px left, bottom 124px right;
     }
@@ -63,7 +63,7 @@
                 }
         
                 &::before {
-                    content: url(../../images/patterns/pattern-divide.svg);
+                    content: url(./../images/patterns/pattern-divide.svg);
                     display: block;
                     width: 100%;
                     height: 65px;
@@ -97,7 +97,7 @@
         &:last-child .m-feature__imgBox {
             @media only screen and (min-width: 48em) {
                 &::after {
-                    content: url('./../../images/patterns/pattern-lines.svg');
+                    content: url('./../images/patterns/pattern-lines.svg');
                     display: block;
                     position: absolute;
                     right: 40px;

@@ -328,7 +328,7 @@ body {
     margin: 0;
     padding: 0;
     height: 320px;
-    background-image: url(../../images/patterns/pattern-curve-bottom-right.svg);
+    background-image: url(./../images/patterns/pattern-curve-bottom-right.svg);
     background-repeat: no-repeat;
     background-position: bottom left;
   }
@@ -362,7 +362,7 @@ body {
     right: 11.5%;
   }
   .o-bookingForm .form::after {
-    content: url("../../images/patterns/pattern-lines.svg");
+    content: url("./../images/patterns/pattern-lines.svg");
     display: block;
     position: absolute;
     left: -82px;
@@ -643,7 +643,7 @@ body {
     padding-bottom: 119px;
     padding-left: 5%;
     padding-right: 5%;
-    background-image: url(./../../images/patterns/pattern-curve-top-right.svg);
+    background-image: url(./../images/patterns/pattern-curve-top-right.svg);
     background-repeat: no-repeat;
     background-position: top left -517px;
   }
@@ -667,7 +667,7 @@ body {
 
 @media only screen and (min-width: 48em) {
   .o-events .m-events__imgBox::before {
-    content: url(./../../images/patterns/pattern-lines.svg);
+    content: url(./../images/patterns/pattern-lines.svg);
     display: block;
     position: absolute;
     height: 76px;
@@ -901,7 +901,7 @@ body {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 40px;
-    background-image: url(./../../images/patterns/pattern-curve-top-left.svg), url(./../../images/patterns/pattern-curve-top-left.svg);
+    background-image: url(./../images/patterns/pattern-curve-top-left.svg), url(./../images/patterns/pattern-curve-top-left.svg);
     background-repeat: no-repeat;
     background-position: top 197px left -517px, bottom right -511px;
   }
@@ -909,7 +909,7 @@ body {
 
 @media only screen and (min-width: 80em) {
   .o-features {
-    background-image: url(./../../images/patterns/pattern-curve-top-right.svg), url(./../../images/patterns/pattern-curve-top-left.svg);
+    background-image: url(./../images/patterns/pattern-curve-top-right.svg), url(./../images/patterns/pattern-curve-top-left.svg);
     background-repeat: no-repeat;
     background-position: top 322px left, bottom 124px right;
   }
@@ -979,7 +979,7 @@ body {
 }
 
 .o-features .m-feature__textBox .-h2::before {
-  content: url(../../images/patterns/pattern-divide.svg);
+  content: url(./../images/patterns/pattern-divide.svg);
   display: block;
   width: 100%;
   height: 65px;
@@ -1024,7 +1024,7 @@ body {
 
 @media only screen and (min-width: 48em) {
   .o-features .m-feature:last-child .m-feature__imgBox::after {
-    content: url("./../../images/patterns/pattern-lines.svg");
+    content: url("./../images/patterns/pattern-lines.svg");
     display: block;
     position: absolute;
     right: 40px;
@@ -1274,7 +1274,7 @@ body {
 }
 
 .o-highlights .-h2::before {
-  content: url(../../images/patterns/pattern-divide.svg);
+  content: url(./../images/patterns/pattern-divide.svg);
   display: block;
   width: 100%;
   height: 65px;
