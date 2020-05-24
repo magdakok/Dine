@@ -909,6 +909,13 @@ body {
   }
 }
 
+@media only screen and (min-width: 100em) {
+  .o-features {
+    padding-left: 17%;
+    padding-right: 17%;
+  }
+}
+
 @media only screen and (min-width: 80em) {
   .o-features .m-feature {
     display: -webkit-box;
@@ -1169,6 +1176,13 @@ body {
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 80em), only screen and (min-resolution: 192dpi) and (min-width: 80em) {
   .o-header {
     background-image: url(./../images/homepage/hero-bg-desktop@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 100em) {
+  .o-header {
+    padding-left: 17%;
+    padding-right: 17%;
   }
 }
 
