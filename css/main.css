@@ -775,6 +775,13 @@ body {
         -ms-flex-order: 2;
             order: 2;
     margin-left: -22px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .o-events .m-events__nav {
+    margin-top: 52px;
   }
 }
 
@@ -831,13 +838,14 @@ body {
   }
 }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 80em) {
   .o-events .m-events__nav .-active::after {
     margin: 0;
     position: absolute;
     left: -125px;
     top: 9px;
     width: 91px;
+    z-index: -1;
   }
 }
 
