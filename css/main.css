@@ -322,8 +322,8 @@ body {
 }
 
 .o-bookingForm .form {
-  -webkit-box-shadow: 0px 49px 79px 0px rgba(112, 112, 112, 0.8);
-          box-shadow: 0px 49px 79px 0px rgba(112, 112, 112, 0.8);
+  -webkit-box-shadow: 0px 49px 79px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 49px 79px 0px rgba(0, 0, 0, 0.4);
   padding: 27px 10% 32px 10%;
   margin-top: -194px;
   background-color: #FFFFFF;
@@ -638,6 +638,7 @@ body {
 
 @media only screen and (min-width: 80em) {
   .o-events {
+    background-position: top left -350px;
     padding: 161px 11.6%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -682,8 +683,8 @@ body {
 }
 
 .o-events .m-events__imgBox img {
-  -webkit-box-shadow: 0px 49px 79px 0px rgba(112, 112, 112, 0.8);
-          box-shadow: 0px 49px 79px 0px rgba(112, 112, 112, 0.8);
+  -webkit-box-shadow: 0px 49px 79px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 49px 79px 0px rgba(0, 0, 0, 0.4);
   display: none;
   margin-right: auto;
   margin-left: auto;
@@ -895,6 +896,14 @@ body {
 
 @media only screen and (min-width: 80em) {
   .o-features {
+    background-image: url(./../../images/patterns/pattern-curve-top-right.svg), url(./../../images/patterns/pattern-curve-top-left.svg);
+    background-repeat: no-repeat;
+    background-position: top 322px left, bottom 124px right;
+  }
+}
+
+@media only screen and (min-width: 80em) {
+  .o-features {
     padding-right: 11.6%;
     padding-left: 11.6%;
   }
@@ -926,8 +935,8 @@ body {
 }
 
 .o-features .m-feature__imgBox img {
-  -webkit-box-shadow: 0px 49px 79px 0px rgba(112, 112, 112, 0.8);
-          box-shadow: 0px 49px 79px 0px rgba(112, 112, 112, 0.8);
+  -webkit-box-shadow: 0px 49px 79px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 49px 79px 0px rgba(0, 0, 0, 0.4);
 }
 
 .o-features .m-feature__textBox .-h2 {

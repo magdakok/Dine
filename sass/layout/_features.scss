@@ -11,6 +11,12 @@
     }
 
     @media only screen and (min-width: 80em) {
+        background-image: url(./../../images/patterns/pattern-curve-top-right.svg), url(./../../images/patterns/pattern-curve-top-left.svg);
+        background-repeat: no-repeat;
+        background-position: top 322px left, bottom 124px right;
+    }
+
+    @media only screen and (min-width: 80em) {
         padding-right: $padding-desktop;
         padding-left: $padding-desktop;
     }
