@@ -105,6 +105,11 @@
         text-align: center;
         margin-bottom: 24px;
 
+        .m-highlights__imgBox {
+            width: 100%;
+            overflow: hidden;
+        }
+
         &:not(:last-child)::after {
             content: '';
             display: block;

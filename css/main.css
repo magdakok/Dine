@@ -660,6 +660,8 @@ body {
 }
 
 .o-events .m-events__imgBox {
+  width: 100%;
+  overflow: hidden;
   position: relative;
   margin-right: auto;
   margin-left: auto;
@@ -944,11 +946,13 @@ body {
 
 .o-features .m-feature__imgBox {
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 55em) {
   .o-features .m-feature__imgBox {
-    width: 655px;
+    max-width: 655px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1390,6 +1394,11 @@ body {
 .o-highlights .m-highlights__dish {
   text-align: center;
   margin-bottom: 24px;
+}
+
+.o-highlights .m-highlights__dish .m-highlights__imgBox {
+  width: 100%;
+  overflow: hidden;
 }
 
 .o-highlights .m-highlights__dish:not(:last-child)::after {
