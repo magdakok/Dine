@@ -661,7 +661,6 @@ body {
 
 .o-events .m-events__imgBox {
   width: 100%;
-  overflow: hidden;
   position: relative;
   margin-right: auto;
   margin-left: auto;
@@ -703,6 +702,8 @@ body {
   display: none;
   margin-right: auto;
   margin-left: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 @media only screen and (min-width: 48em) {
@@ -947,7 +948,6 @@ body {
 .o-features .m-feature__imgBox {
   position: relative;
   width: 100%;
-  overflow: hidden;
 }
 
 @media only screen and (min-width: 55em) {
@@ -961,6 +961,8 @@ body {
 .o-features .m-feature__imgBox img {
   -webkit-box-shadow: 0px 49px 79px 0px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 49px 79px 0px rgba(0, 0, 0, 0.4);
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .o-features .m-feature__textBox .-h2 {
